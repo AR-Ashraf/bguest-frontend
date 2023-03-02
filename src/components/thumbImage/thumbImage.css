@@ -1,0 +1,38 @@
+.bguest__thumbImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+.bguest__thumbImage h1{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-black);
+    padding-top: 1rem;
+    font-weight: lighter;
+}
+
+.bguest__thumbImage-Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 245px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.bguest__thumbImage-Image .Image {
+   width: 150px;
+   height: 150px;
+}

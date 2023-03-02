@@ -1,0 +1,22 @@
+.bguest__contact-form{
+    display: "flex"; 
+    flex-direction: "column";
+    align-items: "center";
+    margin-top: 8px;
+    width: 100%;
+}
+
+.bguest__contact-form-body{
+    width: 100%;
+}
+
+.bguest__contact-form-body-field{
+    display: "flex";
+    flex-direction: "column";
+    align-items: "center";
+    margin-top: 8px;
+}
+
+.bguest__contact-form-body-button{
+    margin-top: 1rem;
+}

@@ -1,0 +1,20 @@
+.bguest__featureBullet{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bguest__featureBullet-icon{
+    color: var(--color-brand);
+    font-size: 1.3rem;
+   
+}
+
+.bguest__featureBullet h1{
+    font-family: "Poppins";
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--color-black);
+   
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Josephine';
+    src: local('Josephine'), url(./assets/fonts/NT\ Josefine.otf) format('opentype');
+  }
+  @font-face {
+    font-family: 'Opensans';
+    src: local('Opensans'), url(./assets/fonts/Opensans.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(./assets/fonts/Poppins.ttf) format('truetype');
+  }
+
+:root {
+  --font-family: "Josephine", "Opensans", "Poppins";
+
+  --color-bg: #F4F7FF;
+  --color-grey: #808080;
+  --color-brand: #E04648;
+  --color-brand-dark: #cd3e3e;
+  --color-tagline: #e24444;
+  --color-transparent: rgb(0,0,0,.7);
+  --color-blue: #0072ba;
+  --color-menu-text: #f7f7f7;
+  --color-black: #080808;
+  --color-placeholder: #848897;
+
+}
+

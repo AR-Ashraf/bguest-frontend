@@ -1,0 +1,11 @@
+export {default as Navbar} from "./navbar/Navbar";
+export {default as Tagline} from "./tagline/Tagline";
+export {default as Title} from "./title/Title";
+export {default as Description} from "./description/Description";
+export {default as Footer} from './footer/Footer';
+export {default as ThumbAnimation} from './thumbAnimation/ThumbAnimation';
+export {default as ThumbImage} from './thumbImage/ThumbImage';
+export {default as FeatureBullet} from './feature_bullet/FeatureBullet';
+export {default as Placeholder} from './placeholder/Placeholder';
+export {default as Button} from './button/Button';
+export {default as Map} from './map/Map';

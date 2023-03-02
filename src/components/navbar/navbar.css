@@ -1,0 +1,77 @@
+.bguest__navbar {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--color-bg);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.bguest__navbar-logo{
+    display: inline-block;
+}
+
+.bguest__navbar-logo img{
+    height: 40px;
+    cursor: pointer;
+}
+
+.bguest__navbar-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    max-height: 7vh;
+    max-width: 40vw;
+}
+
+.bguest__navbar-menu a{
+    text-decoration: none;
+    font-family: "Opensans";
+    font-size: 14px;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.bguest__navbar-menu a.active{
+    color: var(--color-brand);
+}
+
+.bguest__navbar-menu-login-button{
+    width: 100px;
+    height: 44px;
+    background: var(--color-brand);
+    margin-right: 1rem;
+    color: white;
+    font-family: "Opensans";
+    border: 0.5px solid var(--color-brand);
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.bguest__navbar-menu-login-button:hover {
+    will-change: transform;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background: var(--color-brand-dark);
+    }
+
+.bguest__navbar-menu-button{
+    cursor: pointer;
+    color: var(--color-brand);
+    font-size: 36px;
+}
+
+.bguest__navbar-menu-button:hover{
+    will-change: transform;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    color: var(--color-brand-dark);
+}

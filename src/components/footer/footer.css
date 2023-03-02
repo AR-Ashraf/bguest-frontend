@@ -1,0 +1,59 @@
+.bguest__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.bguest__footer-slide-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bguest__footer-slide-number h1{
+    font-family: "Josephine";
+    font-size: 32px;
+    color: var(--color-black);
+    align-self: flex-start;
+}
+
+.bguest__footer-slide-number h2{
+    font-family: "Josephine";
+    font-size: 20px;
+    color: var(--color-grey);
+    opacity: 0.8;
+    align-self: flex-end;
+}
+
+.bguest__footer-slide-number-divider{
+    height: 70%;
+    border-left: 1px solid var( --color-grey);
+    opacity: 0.2;
+    transform: rotateY(0deg) rotate(40deg); 
+    margin-left: 0.5rem;
+    align-self: center;
+}
+
+.bguest__footer-partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+
+.bguest__footer-partners h1{
+    font-family: "Poppins";
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.bguest__footer-partners img{
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid var(--color-grey);
+    border-radius: 50%;
+}

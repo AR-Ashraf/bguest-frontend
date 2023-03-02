@@ -1,0 +1,18 @@
+.bguest__button{
+    width: 100px;
+    height: 44px;
+    background: var(--color-brand);
+    margin-right: 1rem;
+    color: white;
+    font-family: "Opensans";
+    border: 0.5px solid var(--color-brand);
+    cursor: pointer;
+    border-radius: 22px;
+}
+
+.bguest__button:hover {
+    will-change: transform;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background: var(--color-brand-dark);
+    }

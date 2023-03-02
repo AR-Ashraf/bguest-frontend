@@ -1,0 +1,143 @@
+#bguest__menu-bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black);
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.bguest__menu-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 70vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: 0.5px solid var(--color-menu-text);
+}
+
+.bguest__menu-body-menus{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+
+.bguest__menu-body-menus a{
+    text-decoration: none;
+    font-family: "Josephine";
+    font-size: 44px;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--color-menu-text);
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.bguest__menu-body-menus a.active{
+    color: var(--color-brand);
+}
+
+.bguest__menu-close-button{
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    cursor: pointer;
+    color: var(--color-brand);
+    font-size: 46px;
+}
+
+.bguest__menu-close-button:hover{
+    will-change: transform;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    color: var(--color-brand-dark);
+}
+
+.bguest__menu-body-animation{
+    width: 70%;
+    height: 100%;
+}
+
+.bguest__menu-footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+}
+
+.bguest__menu-footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bguest__menu-footer-social h1{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 4.2px;
+}
+
+.bguest__menu-footer-social svg{
+    font-size: 32px;
+    color: var(--color-menu-text);
+    margin-top: 1rem;
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    
+}
+
+.bguest__menu-footer-copyright h1{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.bguest__menu-bg-slideIn {
+    will-change: animation;
+    left: 100vw;
+    -webkit-animation: bguest__menu-bg-slideIn  0.5s forwards;
+    animation: bguest__menu-bg-slideIn  0.5s forwards;
+  }
+  
+ .bguest__menu-bg-slideOut {
+    will-change: animation;
+    left: 0;
+    -webkit-animation: bguest__menu-bg-slideOut 0.5s forwards;
+    animation: bguest__menu-bg-slideOut 0.5s forwards;
+    
+  }
+  
+  @-webkit-keyframes bguest__menu-bg-slideIn  {
+    100% { left: 0; }
+  }
+  
+  @keyframes bguest__menu-bg-slideIn  {
+    100% { left: 0; }
+  }
+  
+  @-webkit-keyframes bguest__menu-bg-slideOut {
+    100% { left: 100vw; }
+  }
+  
+  @keyframes bguest__menu-bg-slideOut {
+    100% { left: 100vw; }
+  }
+  

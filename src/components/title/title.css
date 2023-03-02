@@ -1,0 +1,10 @@
+.bguest__title h1{
+    font-family: "Josephine";
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--color-black);
+   
+}
+.bguest__title .highlight {
+    color: var(--color-tagline);
+  }
