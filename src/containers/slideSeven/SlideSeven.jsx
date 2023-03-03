@@ -1,6 +1,5 @@
 import React from "react";
 import { Tagline, Title, Description, Footer } from "../../components";
-import { Form } from "../../containers";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLocationArrow1 } from "react-icons/ci";
 
@@ -22,7 +21,7 @@ function SlideSeven() {
           <div className="bguest__slideSeven-body-contents-description">
           <div className="description">
           <AiOutlineMail/>
-          <Description text="contact@bguest.xyz" />
+          <Description text="contact@bguest.ai" />
           </div>
           <div className="description">
           <CiLocationArrow1/>
@@ -31,7 +30,11 @@ function SlideSeven() {
           </div>
           <div className="bguest__slideSeven-body-contents-form">
           <Tagline text="KNOCK US" />
-          <Form/>
+          <div>
+            <p>
+              You can directly email us to the above email address. We always reply back to genuine emails.
+            </p>
+          </div>
           </div>
         </div>
         <div className="bguest__slideSeven-body-map">

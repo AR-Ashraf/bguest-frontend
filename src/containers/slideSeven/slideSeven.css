@@ -44,10 +44,20 @@
     width: 80%;
 }
 
+.bguest__slideSeven-body-contents-form p{
+    margin-top: 1rem;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    font-weight: lighter;
+}
+
 .bguest__slideSeven-body-map{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
     align-items: center;
     width: 50%;
     height: 90%;
