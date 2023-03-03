@@ -2,9 +2,9 @@ import React from "react";
 import "./title.css";
 
 function Title(props) {
-  const firstLineWords = props.firstLineText.split(" ");
-  const secondLineWords = props.secondLineText.split(" ");
-  const thirdLineWords = props.thirdLineText.split(" ");
+  const firstLineWords = props.firstLineText?.split(" ");
+  const secondLineWords = props.secondLineText?.split(" ");
+  const thirdLineWords = props.thirdLineText?.split(" ");
 
   const highlightClass = (word) => {
     return word === props.highlightedWord ? "highlight" : null;

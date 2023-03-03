@@ -1,0 +1,41 @@
+.bguest__overview{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.bguest__overview-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.bguest__overview-banner-animations{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.bguest__overview-banner-animations .animation{
+    margin: 8px;
+}
+
+.bguest__overview-banner-animations .animation h1{
+    font-size: 18px;
+}
+
+.bguest__overview-banner-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
