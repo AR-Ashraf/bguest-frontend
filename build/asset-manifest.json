@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ba8bb49d.css",
+    "main.js": "/static/js/main.7eb327b5.js",
+    "static/media/restaurant.mp4": "/static/media/restaurant.db97abb774bcea87ef87.mp4",
+    "static/media/restaurant.ogg": "/static/media/restaurant.432ae260721ff49ae5b0.ogg",
+    "static/media/Opensans.ttf": "/static/media/Opensans.ceb05254cedfa895b512.ttf",
+    "static/media/Poppins.ttf": "/static/media/Poppins.8081832fc5cfbf634aa6.ttf",
+    "static/media/NT Josefine.otf": "/static/media/NT Josefine.923ab571039dbb9047e4.otf",
+    "static/media/dashboard.png": "/static/media/dashboard.9cb800978e538e58f4b6.png",
+    "static/media/retain2.svg": "/static/media/retain2.4ed58234cbe5f296586a1d1145603194.svg",
+    "static/media/forest_lounge.svg": "/static/media/forest_lounge.7b9aaa5a09d14b33907550dc152f8281.svg",
+    "static/media/retain1.svg": "/static/media/retain1.58108303645936d47c4de9b4233e656d.svg",
+    "static/media/menu_animation.svg": "/static/media/menu_animation.a1baa807c9f6f84ed7b70ee35dac8c15.svg",
+    "static/media/guest_talk1.svg": "/static/media/guest_talk1.d32370fe31c52b0fe303df95ee86e8fd.svg",
+    "static/media/guest_man.svg": "/static/media/guest_man.d3fcd0e3f2eba80d9095c67000d35013.svg",
+    "static/media/guest_lady.svg": "/static/media/guest_lady.92be1a27c8a78f0b49dcf2e1db54febf.svg",
+    "static/media/guest_talk2.svg": "/static/media/guest_talk2.46825bab21b10dd38e338470b3ea2d6e.svg",
+    "index.html": "/index.html",
+    "static/media/dc.svg": "/static/media/dc.bd962782013a0848942072409d31bd92.svg",
+    "main.ba8bb49d.css.map": "/static/css/main.ba8bb49d.css.map",
+    "main.7eb327b5.js.map": "/static/js/main.7eb327b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba8bb49d.css",
+    "static/js/main.7eb327b5.js"
+  ]
+}
