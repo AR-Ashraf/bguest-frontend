@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState , useRef, useEffect } from "react";
 import { Player } from '@lottiefiles/react-lottie-player';
 import { InView } from "react-intersection-observer";
 import { Tagline, Title, Description, ThumbAnimation, FeatureBulletRight, FeatureBulletLeft, Button, Placeholder, FooterSecondary } from "../../components";
@@ -12,10 +12,39 @@ import ai from "../../assets/animations/ai.json";
 import login from "../../assets/animations/bguest_login.json";
 import "./overview.css";
 
+const useMountEffect = fun => useEffect(fun, []);
+
 function Overview() {
   const [smsInView, setSmsInView] = useState(false);
   const [loginInView, setLoginInView] = useState(false);
   const [aiInView, setAiInView] = useState(false);
+
+  const analyticsRef = useRef(null);
+  const emailRef = useRef(null);
+  const smsRef = useRef(null);
+  const wifiRef = useRef(null);
+  const aiRef = useRef(null);
+
+  
+  // run this function from an event handler or pass it to useEffect to execute scroll
+  const analyticsScroll = () => {
+    analyticsRef.current.scrollIntoView({ block: 'center',  behavior: 'smooth' }); 
+  }
+  const emailScroll = () => {
+    emailRef.current.scrollIntoView({ block: 'center',  behavior: 'smooth' }); 
+  }
+  const smsScroll = () => {
+    smsRef.current.scrollIntoView({ block: 'center',  behavior: 'smooth' }); 
+  }
+  const wifiScroll = () => {
+    wifiRef.current.scrollIntoView({ block: 'center',  behavior: 'smooth' }); 
+  }
+  const aiScroll = () => {
+    aiRef.current.scrollIntoView({ block: 'center',  behavior: 'smooth' }); 
+  }
+
+  // Scroll on mount
+ // useMountEffect(executeScroll); 
 
   return (
     <div className="bguest__overview">
@@ -30,19 +59,19 @@ function Overview() {
         />
         <Description text="Our Secret Ingredient Is Pretty Simple" />
         <div className="bguest__overview-banner-animations">
-          <div className="animation">
+          <div className="animation" onClick={analyticsScroll}>
             <ThumbAnimation player={analytics} text="Guest Analytics" />
           </div>
-          <div className="animation">
+          <div className="animation" onClick={emailScroll}>
             <ThumbAnimation player={email} text="Email Marketing" />
           </div>
-          <div className="animation">
+          <div className="animation" onClick={smsScroll}>
             <ThumbAnimation player={sms} text="SMS Marketing" />
           </div>
-          <div className="animation">
+          <div className="animation" onClick={wifiScroll}>
             <ThumbAnimation player={router_login} text="Auto WiFi Login" />
           </div>
-          <div className="animation">
+          <div className="animation" onClick={aiScroll}>
             <ThumbAnimation player={ai} text="Artificial Intelligence" />
           </div>
         </div>
@@ -54,7 +83,7 @@ function Overview() {
 
       {/*---------- Guest Analytics Feature Details ------------*/}
 
-      <div className="bguest__overview-analytics">
+      <div className="bguest__overview-analytics" ref={analyticsRef}>
         <div className="bguest__overview-analytics-title">
           <Title firstLineText="Guest Analytics" />
         </div>
@@ -104,7 +133,7 @@ function Overview() {
 
       {/*-------- Email Marketing Feature Details ----------*/}
 
-      <div className="bguest__overview-email">
+      <div className="bguest__overview-email" ref={emailRef}>
         <div className="bguest__overview-email-title">
           <Title firstLineText="Email Marketing" />
         </div>
@@ -148,7 +177,7 @@ function Overview() {
 
       {/*--------------- SMS Feature Details ----------------*/}
 
-      <div className="bguest__overview-sms">
+      <div className="bguest__overview-sms" ref={smsRef}>
         <div className="bguest__overview-sms-title">
           <Title firstLineText="SMS Marketing" />
         </div>
@@ -204,7 +233,7 @@ function Overview() {
 
       {/*---------- WiFi Login Feature Details -------------*/}
 
-      <div className="bguest__overview-login">
+      <div className="bguest__overview-login" ref={wifiRef}>
         <div className="bguest__overview-login-title">
           <Title firstLineText="Auto WiFi Login" />
         </div>
@@ -263,7 +292,7 @@ function Overview() {
 
       {/*------------- Artificial Intelligence Feature Details --------------*/}
 
-      <div className="bguest__overview-ai">
+      <div className="bguest__overview-ai" ref={aiRef}>
         <div className="bguest__overview-ai-title">
           <Title firstLineText="Artificial Intelligence" />
         </div>

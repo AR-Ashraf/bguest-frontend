@@ -30,6 +30,7 @@
 
 .bguest__overview-banner-animations .animation{
     margin: 8px;
+    cursor: pointer;
 }
 
 .bguest__overview-banner-animations .animation h1{
