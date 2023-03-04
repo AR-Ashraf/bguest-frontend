@@ -1,5 +1,5 @@
 import React from "react";
-import { GiGiftOfKnowledge } from "react-icons/gi";
+import { RiTeamFill } from "react-icons/ri";
 import { MdTipsAndUpdates } from "react-icons/md";
 import { FaHandsHelping } from "react-icons/fa";
 import { Tagline, Title, Description, ImageInfoBox, FooterSecondary } from "../../components";
@@ -7,6 +7,7 @@ import { Demo } from "../../containers";
 import { OpenLinkNewTab } from "../../helpers/Functions";
 import mission from '../../assets/images/mission.svg';
 import vision from '../../assets/images/vision.svg';
+import teamImage from '../../assets/images/team.png';
 import "./about.css";
 
 function About() {
@@ -16,29 +17,28 @@ function About() {
 
       <div className="bguest__about-banner">
         <Tagline text="WHAT'S THE RECIPE?" />
+        <div className="bguest__about-banner-title">
         <Title
           firstLineText="Experience Is The Secret Ingredient"
           highlightedWord="Experience"
         />
-        <Title
-          firstLineText="To Keep Your Guests Happy"
-          highlightedWord="Guests"
-        />
+        </div>
+       
         <div className="bguest__about-banner-pillars">
           <ImageInfoBox
-            image={<GiGiftOfKnowledge />}
-            title="Know Thy Guest"
-            description="Amazing things can happy only when you know your Guests"
+            image={<RiTeamFill />}
+            title="We are Passionate"
+            description="We are experienced & passionate team constantly working with our clients"
           />
           <ImageInfoBox
             image={<MdTipsAndUpdates />}
-            title="Change For Guest"
-            description="Update the experience your Guests want"
+            title="We Listen"
+            description="We listen what our clients needs to serve their Guests better & execute"
           />
           <ImageInfoBox
             image={<FaHandsHelping />}
-            title="Serve Thy Guest"
-            description="The better you serve, the better you grow"
+            title="We Serve"
+            description="We serve our clients to provide the best experience to their guests"
           />
         </div>
         <div className="bguest__about-banner-bottom">
@@ -47,6 +47,15 @@ function About() {
           <Description text="Said By - Anthony Bourdain" />
           </div>
         </div>
+      </div>
+
+      {/*------------ Team Dedication Image ---------------*/}
+      <div className="bguest__about-team">
+      <img 
+        src={teamImage}
+        alt="bGuest working with their clients"
+      />
+      <Description text="We work with our clients together. Our every client is a part of our vision"/>
       </div>
 
       {/*------------- Mission Statement --------------*/}

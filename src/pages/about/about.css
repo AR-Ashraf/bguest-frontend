@@ -19,6 +19,11 @@
     padding-top: 8rem;
 }
 
+.bguest__about-banner-title {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 .bguest__about-banner-pillars{
     width: 100%;
     display: flex;
@@ -40,6 +45,22 @@
     text-decoration: underline;
     font-weight: 700;
     cursor: pointer;
+}
+
+/* Team Dedication Image */
+
+.bguest__about-team {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.bguest__about-team img{
+    width: 60%;
+    object-fit: cover;
 }
 
 /* Mission Statement */
