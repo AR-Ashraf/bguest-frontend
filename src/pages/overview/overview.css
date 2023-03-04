@@ -1,9 +1,13 @@
+/* Product Overview Full Body */
+
 .bguest__overview{
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    overflow-y: scroll;
 }
+
+/* First Screen Banner */
 
 .bguest__overview-banner {
     width: 100%;
@@ -38,4 +42,284 @@
     align-items: center;
     justify-content: center;
     margin-top: 3rem;
+}
+
+/* Guest Analytics Feature Details */
+
+
+.bguest__overview-analytics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__overview-analytics-title h1{
+    font-size: 3em;
+}
+
+.bguest__overview-analytics-subTitle{
+    width: 80%;
+    text-align: center;
+}
+
+.bguest__overview-analytics-contents{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.bguest__overview-analytics-contents-video{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}
+
+.bguest__overview-analytics-contents-benefits{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.bguest__overview-analytics-contents-benefits-tag{
+    align-self: flex-end;
+}
+
+.bguest__overview-analytics-contents-benefits-points{
+    margin-top: 1rem;
+}
+
+.bguest__overview-analytics-contents-benefits-points .point{
+    margin-top: 1rem;
+}
+
+/* Email Marketing Feature Details */
+
+.bguest__overview-email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__overview-email-title h1{
+    font-size: 3em;
+}
+
+.bguest__overview-email-subTitle{
+    width: 80%;
+    text-align: center;
+}
+
+.bguest__overview-email-contents{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.bguest__overview-email-contents-video{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}
+
+.bguest__overview-email-contents-benefits{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.bguest__overview-email-contents-benefits-tag{
+    align-self: flex-start;
+}
+
+.bguest__overview-email-contents-benefits-points{
+    margin-top: 1rem;
+}
+
+.bguest__overview-email-contents-benefits-points .point{
+    margin-top: 1rem;
+}
+
+/* SMS Marketing Feature Details */
+
+.bguest__overview-sms{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__overview-sms-title h1{
+    font-size: 3em;
+}
+
+.bguest__overview-sms-subTitle{
+    width: 80%;
+    text-align: center;
+}
+
+.bguest__overview-sms-contents{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.bguest__overview-sms-contents-animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.bguest__overview-sms-contents-animation .smsAnimation{
+    height: 500px;
+}
+
+.bguest__overview-sms-contents-benefits{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.bguest__overview-sms-contents-benefits-tag{
+    align-self: flex-start;
+}
+
+.bguest__overview-sms-contents-benefits-points{
+    margin-top: 1rem;
+}
+
+.bguest__overview-sms-contents-benefits-points .point{
+    margin-top: 1rem;
+}
+
+/* WiFi Login Feature Details */
+
+.bguest__overview-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__overview-login-title h1{
+    font-size: 3em;
+}
+
+.bguest__overview-login-subTitle{
+    width: 80%;
+    text-align: center;
+}
+
+.bguest__overview-login-contents{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.bguest__overview-login-contents-animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.bguest__overview-login-contents-animation .loginAnimation{
+    height: 500px;
+}
+
+.bguest__overview-login-contents-benefits{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.bguest__overview-login-contents-benefits-tag{
+    align-self: flex-start;
+}
+
+.bguest__overview-login-contents-benefits-points{
+    margin-top: 1rem;
+}
+
+.bguest__overview-login-contents-benefits-points .point{
+    margin-top: 1rem;
+}
+
+/* Artificial Intelligence Feature Details */
+
+.bguest__overview-ai{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__overview-ai-title h1{
+    font-size: 3em;
+}
+
+.bguest__overview-ai-subTitle{
+    width: 80%;
+    text-align: center;
+}
+
+.bguest__overview-ai-tag{
+    margin-top: 1rem;
+}
+
+.bguest__overview-ai-contents{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.bguest__overview-ai-contents-animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.bguest__overview-ai-contents-animation .aiAnimation{
+    height: 500px;
+}
+
+.bguest__overview-demo-booking{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
 }

@@ -1,0 +1,71 @@
+.bguest__footerSecondary{
+    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--color-black);
+}
+
+.bguest__footerSecondary-logo img{
+    width: 10vw;
+}
+
+.bguest__footerSecondary-permalinks{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bguest__footerSecondary-permalinks-social-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.bguest__footerSecondary-permalinks-social svg{
+    font-size: 32px;
+    color: var(--color-menu-text);
+    margin-top: 1rem;
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.bguest__footerSecondary-permalinks-social svg:hover{
+    color: var(--color-brand);
+}
+
+.bguest__footerSecondary-permalinks-extras{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.bguest__footerSecondary-permalinks-extras h1{
+    color: white;
+    margin-right: 3rem;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+
+.bguest__footerSecondary-permalinks-extras a{
+    color: white;
+    margin-left: 1rem;
+    font-size: 16px;
+    font-family: "Poppins";
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bguest__footerSecondary-permalinks-extras a:hover{
+    color: var(--color-brand);
+}
+
+

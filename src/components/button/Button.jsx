@@ -3,7 +3,7 @@ import './button.css';
 
 const Button = (props) =>  {
     return (
-        <button className="bguest__button">{props.text}</button>
+        <button className="bguest__button" onClick={props.onClick}>{props.text}</button>
     );
 }
 

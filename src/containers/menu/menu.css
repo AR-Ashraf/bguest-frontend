@@ -103,6 +103,10 @@
     
 }
 
+.bguest__menu-footer-social svg:hover{
+    color: var(--color-brand);
+}
+
 .bguest__menu-footer-copyright h1{
     font-family: "Poppins";
     font-size: 14px;

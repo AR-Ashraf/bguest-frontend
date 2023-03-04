@@ -1,17 +1,17 @@
-.bguest__featureBullet{
+.bguest__featureBulletLeft{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.bguest__featureBullet-icon{
+.bguest__featureBulletLeft-icon{
     color: var(--color-brand);
     font-size: 1.3rem;
    
 }
 
-.bguest__featureBullet h1{
+.bguest__featureBulletLeft h1{
     font-family: "Poppins";
     font-size: 1.3rem;
     font-weight: 800;

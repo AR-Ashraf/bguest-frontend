@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { ABOUT, OVERVIEW, PRICING, CONTACT } from "../../helpers/Constants";
-import { waitForm } from "../../helpers/Functions";
+import { waitForm, OpenLinkNewTab } from "../../helpers/Functions";
 import { menuAction } from "../../redux/actions";
 import { RiCloseLine } from "react-icons/ri";
 import { BsFacebook, BsLinkedin, BsInstagram } from "react-icons/bs";
@@ -80,9 +80,9 @@ function Menu() {
         <div className="bguest__menu-footer-social">
           <h1>CONNECT WITH US</h1>
           <div className="bguest__menu-footer-social-icons">
-            <BsFacebook />
-            <BsLinkedin />
-            <BsInstagram />
+            <BsLinkedin onClick={() => {OpenLinkNewTab("https://www.linkedin.com/company/devs-core/")}}/>
+            <BsFacebook onClick={() => {OpenLinkNewTab("https://www.facebook.com/devs.core.company")}}/>
+            <BsInstagram onClick={() => {OpenLinkNewTab("https://www.instagram.com/devs_core/")}}/>
           </div>
         </div>
         <div className="bguest__menu-footer-copyright">

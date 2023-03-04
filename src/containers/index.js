@@ -1,6 +1,7 @@
 export {default as Menu} from "./menu/Menu";
 export {default as VideoPreview} from './videoPreview/VideoPreview';
 export {default as Form} from './form/Form';
+export {default as Demo} from './demo/Demo';
 export {default as SlideOne} from "./slideOne/SlideOne";
 export {default as SlideTwo} from "./slideTwo/SlideTwo";
 export {default as SlideThree} from "./slideThree/SlideThree";

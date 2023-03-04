@@ -6,3 +6,7 @@ export function waitForm(ms)  {
 export function OpenLink (props)  {
   window.location.assign(props);      
 }
+
+export function OpenLinkNewTab (props) {
+  window.open(props, '_blank');
+}
