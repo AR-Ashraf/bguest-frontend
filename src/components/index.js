@@ -12,3 +12,4 @@ export {default as Placeholder} from './placeholder/Placeholder';
 export {default as Button} from './button/Button';
 export {default as AnimatedButton} from './animated_button/AnimatedButton';
 export {default as Map} from './map/Map';
+export {default as ImageInfoBox} from './imageInfoBox/ImageInfoBox';

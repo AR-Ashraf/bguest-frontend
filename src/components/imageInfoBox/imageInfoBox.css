@@ -1,0 +1,35 @@
+.bguest__imageInfoBox{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.bguest__imageInfoBox-Image svg{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    color: var(--color-brand);
+}
+
+.bguest__imageInfoBox-title{
+    width: 100%;
+    font-family: "Josephine";
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-black);
+    padding-top: 1rem;
+}
+.bguest__imageInfoBox-description{
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 8px;
+    color: var(--color-black);
+    padding-top: 1rem;
+    font-weight: lighter;
+}
