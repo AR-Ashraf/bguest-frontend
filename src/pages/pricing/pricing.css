@@ -1,0 +1,77 @@
+.bguest__pricing{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Top Content */
+
+.bguest__pricing-top-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* Toggle Section */
+
+.bguest__pricing-toggle-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.bguest__pricing-toggle-section h1{
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 0;
+}
+
+.bguest__pricing-toggle-section .month h1{
+    color: var(--color-grey);
+}
+
+.bguest__pricing-toggle-section .year h1{
+    color: var(--color-grey);
+}
+
+.bguest__pricing-toggle-section .discount{
+    font-family: "Poppins";
+    font-size: 8px;
+    background-color: bisque;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Pricing Table */
+
+.bguest__pricing-packages{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+
+.bguest__pricing-packages .package{
+    margin: 1rem;
+}
+
+/* Customized Order */
+
+.bguest__pricing-packages-customized{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.bguest__pricing-packages-customized-title h1{
+    font-size: 3em;
+}

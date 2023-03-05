@@ -1,0 +1,60 @@
+.bguest__premiumPricing{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid var(--color-grey);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.bguest__premiumPricing-tag img{
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+
+.bguest__premiumPricing h2{
+    font-family: "Josephine";
+    font-size: 22px;
+}
+
+.bguest__premiumPricing h3{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: var(--color-grey);
+}
+
+.bguest__premiumPricing-price{
+    margin-top: 1.5rem;
+}
+
+.bguest__premiumPricing-price p{
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bguest__premiumPricing-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.bguest__premiumPricing-features{
+    margin-top: 1.5rem;
+}
+
+.bguest__premiumPricing-features h1{
+    font-size: 16px;
+}
+
+.bguest__premiumPricing-features .feature{
+    margin-top: 8px;
+}

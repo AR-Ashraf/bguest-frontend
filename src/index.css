@@ -16,9 +16,11 @@
 
   --color-bg: #F4F7FF;
   --color-grey: #808080;
+  --color-grey-light: #D3D3D3;
   --color-brand: #E04648;
   --color-brand-dark: #cd3e3e;
   --color-tagline: #e24444;
+  --color-brand-light: #fac5c7;
   --color-transparent: rgb(0,0,0,.7);
   --color-blue: #0072ba;
   --color-menu-text: #f7f7f7;

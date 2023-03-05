@@ -19,10 +19,10 @@ function SlideFive() {
           />
           <Description text="All Your Guest Engagements & Automation In A Single Dashboard!" />
           <div className="bguest__slideFive-body-contents-features">
-          <FeatureBulletLeft text="Guest Engagement InfoGraphics"/>
-          <FeatureBulletLeft text="Date & Time Wise Data Visuals"/>
-          <FeatureBulletLeft text="Free Unlimited Emails For Marketing"/>
-          <FeatureBulletLeft text="Free 3000 Masking SMS For Marketing"/>
+          <FeatureBulletLeft color="#E04648" text="Guest Engagement InfoGraphics"/>
+          <FeatureBulletLeft color="#E04648" text="Date & Time Wise Data Visuals"/>
+          <FeatureBulletLeft color="#E04648" text="Free Unlimited Emails For Marketing"/>
+          <FeatureBulletLeft color="#E04648" text="Free 3000 Masking SMS For Marketing"/>
           </div>
         </div>
         <div className="bguest__slideFive-body-animation">

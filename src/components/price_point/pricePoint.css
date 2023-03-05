@@ -1,15 +1,19 @@
-.bguest__featureBulletLeft{
+.bguest__pricePoint{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.bguest__featureBulletLeft-icon{
-    font-size: 1.3rem;
+.bguest__pricePoint-icon{
+    width: 10%;
+    font-size: 18px;
+    
 }
 
-.bguest__featureBulletLeft h1{
+.bguest__pricePoint h1{
+    width: 90%;
     font-family: "Poppins";
     font-size: 1.3rem;
     font-weight: 800;

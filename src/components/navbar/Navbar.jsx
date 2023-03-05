@@ -10,6 +10,7 @@ import { CgMenuRight } from 'react-icons/cg';
 
 
 import './navbar.css';
+import { OpenLinkNewTab } from '../../helpers/Functions';
 
 
 const Navbar = () => {
@@ -29,8 +30,13 @@ const Navbar = () => {
           <NavLink to={OVERVIEW} preventScrollReset={true} activeClassName="active">Product Overview</NavLink>
           <NavLink to={PRICING} preventScrollReset={true} activeClassName="active">Pricing</NavLink>
           <NavLink to={LOGIN} preventScrollReset={true} activeClassName="active">Log In</NavLink>
-          {/* <Button text="Log In"/> */}
-          <AnimatedButton/>
+          <AnimatedButton 
+          width="150px" 
+          height="60px" 
+          text="Demo"
+          fontSize="14px"
+          onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}
+          />
           <CgMenuRight  className="bguest__navbar-menu-button"  onClick={() => dispatch(menuAction(!isMenu))} />
        
         </div>

@@ -6,7 +6,6 @@
 }
 
 .bguest__featureBulletRight-icon{
-    color: var(--color-brand);
     font-size: 1.3rem;
    
 }
@@ -16,5 +15,5 @@
     font-size: 1.3rem;
     font-weight: 800;
     color: var(--color-black);
-   
+    margin-right: 5px;
 }

@@ -11,30 +11,3 @@
     text-align: center;
     font-size: 18px;
 }
-
-.bGuest__demo-button-animation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.bGuest__demo-button-animation .buttonAnimation{
-    width: 500px;
-}
-
-.bGuest__demo-button-animation h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: "Poppins";
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-}

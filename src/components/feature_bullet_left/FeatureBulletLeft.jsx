@@ -2,13 +2,14 @@ import React from 'react';
 import { CgEditBlackPoint } from "react-icons/cg";
 import './featureBulletLeft.css';
 
-function FeatureBulletLeft(props) {
+function FeatureBulletLeft({text, color}) {
     return (
         <div className='bguest__featureBulletLeft'>
         <CgEditBlackPoint
             className="bguest__featureBulletLeft-icon"
+            style={{color: color}}
           />
-            <h1>{props.text}</h1>
+            <h1>{text}</h1>
         </div>
     );
 }

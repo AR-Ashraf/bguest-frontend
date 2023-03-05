@@ -2,16 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 60px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     margin-right: 1rem;
-}
-
-.bGuest__animated-button-animation .buttonAnimation{
-    width: 150px;
 }
 
 .bGuest__animated-button-animation h1{
@@ -21,7 +15,6 @@
     transform: translate(-50%, -50%);
     color: white;
     font-family: "Opensans";
-    font-size: 14px;
     font-weight: bold;
     text-align: center;
 }

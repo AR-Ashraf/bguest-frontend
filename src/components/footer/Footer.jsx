@@ -9,7 +9,7 @@ function Footer(props) {
       <div className="bguest__footer-slide-number">
         <h1>{props.slideNo}</h1>
         <div className="bguest__footer-slide-number-divider"></div>
-        <h2>IX</h2>
+        <h2>VII</h2>
       </div>
       <div className="bguest__footer-partners">
         <h1>OUR PARTNERS</h1>

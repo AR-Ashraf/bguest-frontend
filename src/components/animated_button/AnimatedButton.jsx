@@ -6,12 +6,13 @@ import buttonAnim from "../../assets/animations/button.json";
 import Placeholder from '../placeholder/Placeholder';
 import './animatedButton.css';
 
-const AnimatedButton = () =>  {
+const AnimatedButton = ({width, height, text, fontSize, onClick}) =>  {
     const [buttonInView, setButtonInView] = useState(false);
     return (
         <div 
         className="bGuest__animated-button-animation" 
-        onClick={() => {OpenLinkNewTab("https://calendly.com/bguest-ai/demo")}}>
+        style={{ width: width, height: height }}
+        onClick={onClick}>
         <InView onChange={setButtonInView}>
           {({ ref, inView }) => (
             <div ref={ref}>
@@ -21,7 +22,7 @@ const AnimatedButton = () =>  {
                     src={JSON.parse(JSON.stringify(buttonAnim))}
                     loop
                     autoplay
-                    className="buttonAnimation"
+                    style={{ width: width }}
                     />
               :
               <Placeholder/>
@@ -29,7 +30,7 @@ const AnimatedButton = () =>  {
             </div>
           )}
         </InView>
-        <h1>Demo</h1>
+        <h1 style={{ fontSize: fontSize }}>{text}</h1>
         </div>
     );
 }

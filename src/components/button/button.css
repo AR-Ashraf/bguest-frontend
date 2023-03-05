@@ -1,13 +1,11 @@
 .bguest__button{
-    width: 100px;
-    height: 44px;
     background: var(--color-brand);
     margin-right: 1rem;
     color: white;
     font-family: "Opensans";
+    font-weight: bold;
     border: 0.5px solid var(--color-brand);
     cursor: pointer;
-    border-radius: 22px;
 }
 
 .bguest__button:hover {
