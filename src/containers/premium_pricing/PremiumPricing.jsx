@@ -1,16 +1,14 @@
 import React from 'react';
 import { Button, PricePoint } from '../../components';
 import { OpenLinkNewTab } from '../../helpers/Functions';
-import tag from '../../assets/images/popular_tag.svg';
+import tag from '../../assets/images/popular_tag.png';
 import './premiumPricing.css';
 
 function PremiumPricing({price})  {
   
     return (
       <div className="bguest__premiumPricing">
-      <div className='bguest__premiumPricing-tag'>
-        <img src={tag} alt=""/>
-      </div>
+      <img className='bguest__premiumPricing-tag' src={tag} alt=""/>
       <h2>Premium</h2>
       <h3>For Established Restaurants</h3>
       <div className='bguest__premiumPricing-price'>

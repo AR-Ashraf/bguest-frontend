@@ -1,6 +1,7 @@
 export {default as Menu} from "./menu/Menu";
 export {default as VideoPreview} from './videoPreview/VideoPreview';
 export {default as Form} from './form/Form';
+export {default as LoginForm} from './login_form/LoginForm';
 export {default as Demo} from './demo/Demo';
 export {default as BasicPricing} from './basic_pricing/BasicPricing';
 export {default as StandardPricing} from './standard_pricing/StandardPricing';

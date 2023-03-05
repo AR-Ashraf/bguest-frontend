@@ -1,0 +1,68 @@
+.bguest__login-form{
+    display: "flex"; 
+    flex-direction: "column";
+    align-items: "center";
+    margin-top: 8px;
+    width: 100%;
+}
+
+.bguest__login-form-body{
+    width: 100%;
+}
+
+.bguest__login-form-body-field{
+    display: "flex";
+    flex-direction: "column";
+    align-items: "center";
+    margin-top: 8px;
+}
+
+.bguest__login-form-body-field-email-input{
+    width: 100%; 
+    padding: 1rem; 
+    border: none; 
+}
+
+.bguest__login-form-body-field-email-input:focus{
+    outline: none;
+}
+
+.bguest__login-form-body-field-password-input{
+    width: 90%;
+    padding: 1rem; 
+    border: none; 
+}
+
+.bguest__login-form-body-field-password-input:focus{
+    outline: none;
+}
+
+.bguest__login-form-body-field .password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: none; 
+    background-color: white;
+    padding-right: 1rem;
+}
+
+.bguest__login-form-body-field-icon{
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--color-grey);
+}
+
+.bguest__login-form-body-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.bguest__login-form-error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

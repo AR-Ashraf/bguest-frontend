@@ -12,10 +12,12 @@
     position: relative;
 }
 
-.bguest__premiumPricing-tag img{
+.bguest__premiumPricing-tag {
     width: 100px;
-    height: 200px;
-    background-color: red;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    object-fit: contain;
 }
 
 .bguest__premiumPricing h2{
