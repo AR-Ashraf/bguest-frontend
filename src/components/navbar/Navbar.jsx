@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {ROOT, LOGIN, OVERVIEW, PRICING} from "../../helpers/Constants";
 import {menuAction} from "../../redux/actions";
-import { Button } from '..';
 import {AnimatedButton} from '..';
 import { CgMenuRight } from 'react-icons/cg';
 

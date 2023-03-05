@@ -4,3 +4,4 @@ export {default as Pricing} from "./pricing/Pricing";
 export {default as About} from './about/About';
 export {default as Contact} from "./contact/Contact";
 export {default as Login} from "./login/Login";
+export {default as Privacy} from "./privacy_policy/Privacy";

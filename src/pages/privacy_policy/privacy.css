@@ -1,0 +1,10 @@
+.bguest__privacy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__privacy-title{
+    margin-top: 5rem;
+}
