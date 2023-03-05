@@ -36,20 +36,20 @@ function Pricing() {
           <Description text="Yearly" />
         </div>
         <div className="discount">
-          <h2>10% Discount</h2>
+          <h2>2 Months Free</h2>
         </div>
       </div>
 
       {/*----------- Pricing Table ---------------*/}
       <div className="bguest__pricing-packages">
         <div className="package">
-          <BasicPricing price={isToggle ? "৳42,999" : "৳3999"} />
+          <BasicPricing price={isToggle ? "৳39,999" : "৳3999"} />
         </div>
         <div className="package">
-          <StandardPricing price={isToggle ? "৳85,999" : "৳7999"}  />
+          <StandardPricing price={isToggle ? "৳79,999" : "৳7999"}  />
         </div>
         <div className="package">
-          <PremiumPricing price={isToggle ? "৳1,07,999" : "৳9999"}  />
+          <PremiumPricing price={isToggle ? "৳99,999" : "৳9999"}  />
         </div>
       </div>
 
