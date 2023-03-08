@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo_white.svg";
-import { NavLink } from "react-router-dom";
-import { PRIVACY, TERMS, COOKIES } from "../../helpers/Constants";
-import { OpenLinkNewTab } from "../../helpers/Functions";
+import { OpenLinkNewTab, OpenLink } from "../../helpers/Functions";
 import { BsFacebook, BsLinkedin, BsInstagram } from "react-icons/bs";
 import "./footerSecondary.css";
 
@@ -22,15 +20,9 @@ function FooterSecondary(props) {
         </div>
         <div className="bguest__footerSecondary-permalinks-extras">
           <h1>© bGuest 2023 All Rights Reserved</h1>
-          <NavLink to={PRIVACY} preventScrollReset={true}>
-            Privacy Policy
-          </NavLink>
-          <NavLink to={TERMS} preventScrollReset={true}>
-            Terms & Conditions
-          </NavLink>
-          <NavLink to={COOKIES} preventScrollReset={true}>
-            Cookie Policy
-          </NavLink>
+          <p onClick={() => {OpenLink("https://bguest.ai/insight/privacy-policy/")}}>Privacy Policy</p>
+          <p onClick={() => {OpenLink("https://bguest.ai/insight/terms-conditions/")}}>Terms & Conditions</p>
+          <p onClick={() => {OpenLink("https://bguest.ai/insight/cookie-policy/")}}>Cookie Policy</p>
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@
     font-family: "Poppins";
 }
 
-.bguest__footerSecondary-permalinks-extras a{
+.bguest__footerSecondary-permalinks-extras p{
     color: white;
     margin-left: 1rem;
     font-size: 16px;
@@ -65,7 +65,7 @@
     cursor: pointer;
 }
 
-.bguest__footerSecondary-permalinks-extras a:hover{
+.bguest__footerSecondary-permalinks-extras p:hover{
     color: var(--color-brand);
 }
 

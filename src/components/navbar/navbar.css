@@ -41,7 +41,11 @@
     font-weight: bold;
     margin-right: 1rem;
     cursor: pointer;
-    color: var(--color-text);
+    color: var(--color-black);
+}
+
+.bguest__navbar-menu a:hover{
+    color: var(--color-brand);
 }
 
 .bguest__navbar-menu a.active{

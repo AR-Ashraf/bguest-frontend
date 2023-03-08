@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom"; 
-import {ROOT, DASHBOARD, OVERVIEW, PRICING,ABOUT, CONTACT, LOGIN, PRIVACY, TERMS} from "../helpers/Constants";
-import {Homepage, Overview, Pricing, About, Contact, Login, Privacy} from "../pages";
+import {ROOT, DASHBOARD, OVERVIEW, PRICING,ABOUT, CONTACT, LOGIN} from "../helpers/Constants";
+import {Homepage, Overview, Pricing, About, Contact, Login} from "../pages";
 
 export const RouterConfig = () => {
     return (
@@ -13,7 +13,6 @@ export const RouterConfig = () => {
             <Route exact path={ABOUT} element={<About/>}/>
             <Route exact path={CONTACT} element={<Contact/>}/>
             <Route exact path={LOGIN} element={<Login/>}/>
-            <Route exact path={PRIVACY} element={<Privacy/>}/>
         </Routes>
     );
 };
