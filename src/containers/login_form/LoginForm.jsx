@@ -1,11 +1,42 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../components";
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
+import { LOGIN_API } from "../../helpers/Constants";
 import './loginForm.css';
+import { tokenAction } from "../../redux/actions";
+
+
+async function loginUser(credentials) {
+  const encodeLoginData = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  return fetch( LOGIN_API, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-type": "application/x-www-form-urlencoded",
+    },
+    body: encodeLoginData(credentials),
+  })
+    .then((response) => response.json())
+    .then((data) => data);
+}
 
 function LoginForm() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+
   const [formData, setFormData] = useState({
-    email: "",
+    username: "",
     password: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
@@ -18,14 +49,32 @@ function LoginForm() {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (!formData.email || !formData.password) {
-      setErrorMessage("Both email and password are required");
+    if (!formData.username || !formData.password) {
+      setErrorMessage("Both username and password are required");
     } else {
-      setErrorMessage("");
+      
       // send login data to server
+
+      const token = await loginUser({
+        username: formData.username,
+        password: formData.password,
+      });
+  
+      if (token.token) {
+        setErrorMessage("");
+        localStorage.setItem("saveToken", token.token);
+        dispatch(tokenAction(token.token));
+        navigate("/dashboard");
+        
+      } else {
+        setErrorMessage("Username or Password is incorrect!");
+        return;
+      }
+
+
     }
   };
 
@@ -37,15 +86,15 @@ function LoginForm() {
     <div className="bguest__login-form">
       <form className="bguest__login-form-body" onSubmit={handleSubmit}>
         <div className="bguest__login-form-body-field">
-          <label htmlFor="email">
+          <label htmlFor="username">
             <input
-              className="bguest__login-form-body-field-email-input"
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              className="bguest__login-form-body-field-username-input"
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
               onChange={handleChange}
-              placeholder="Email Address"
+              placeholder="Username"
             />
           </label>
         </div>
@@ -89,5 +138,7 @@ function LoginForm() {
     </div>
   );
 }
+
+
 
 export default LoginForm;

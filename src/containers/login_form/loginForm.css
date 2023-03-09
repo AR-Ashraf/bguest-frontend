@@ -17,13 +17,13 @@
     margin-top: 8px;
 }
 
-.bguest__login-form-body-field-email-input{
+.bguest__login-form-body-field-username-input{
     width: 100%; 
     padding: 1rem; 
     border: none; 
 }
 
-.bguest__login-form-body-field-email-input:focus{
+.bguest__login-form-body-field-username-input:focus{
     outline: none;
 }
 

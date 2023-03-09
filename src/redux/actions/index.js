@@ -11,3 +11,10 @@ export const videoPreviewAction = (videoPreviewState) => {
         videoPreviewState
     }
 }
+
+export const tokenAction = (tokenState) => {
+    return {
+        type: 'TOKEN',
+        tokenState
+    }
+}
