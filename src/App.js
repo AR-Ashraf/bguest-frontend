@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import {Navbar} from "./components";
@@ -7,12 +8,15 @@ import './App.css';
 import ScrollToTop from "./helpers/ScrollToTop";
 
 function App() {
+
+
   const isMenu = useSelector(state => state.isMenu);
   const isVideo = useSelector(state => state.isVideo);
   return (
     <div className="App">
     <div className="bguest__bg">
       <Router>
+        <Suspense fallback={<div>Loading...</div>}>
         <ScrollToTop/>
         <Navbar/>
         <div className="bguest__body">
@@ -20,6 +24,7 @@ function App() {
           {isVideo ? <VideoPreview/> : null}
           <RouterConfig/>
         </div>
+        </Suspense>
       </Router>
     </div>
     
