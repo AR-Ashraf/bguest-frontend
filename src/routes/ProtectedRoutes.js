@@ -14,11 +14,7 @@ const useAuth = (token) => {
 
 const ProtectedRoutes = ({ token }) => {
   const isAuth = useAuth(token);
-  return isAuth ? (
-    <Outlet />
-  ) : (
-    <Navigate to={LOGIN} replace={true} />
-  );
+  return isAuth ? <Outlet /> : <Navigate to={LOGIN} replace={true} />;
 };
 
 export default ProtectedRoutes;
