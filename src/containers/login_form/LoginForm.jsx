@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../components";
+import { tokenAction } from "../../redux/actions";
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
 import { LOGIN_API } from "../../helpers/Constants";
 import './loginForm.css';
-import { tokenAction } from "../../redux/actions";
-
 
 async function loginUser(credentials) {
   const encodeLoginData = (data) => {
