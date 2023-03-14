@@ -14,3 +14,4 @@ export {default as Button} from './button/Button';
 export {default as AnimatedButton} from './animated_button/AnimatedButton';
 export {default as ImageInfoBox} from './imageInfoBox/ImageInfoBox';
 export {default as ToggleSwitch} from './toggleSwitch/ToggleSwitch';
+export {default as Tab} from './tab/Tab';

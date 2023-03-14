@@ -17,7 +17,7 @@ function App() {
       <div className="bguest__bg">
         <Suspense fallback={<div>Loading...</div>}>
           <ScrollToTop />
-          {pathname !== "/dashboard" && <Navbar />}
+          {pathname.includes("/dashboard") ? null : <Navbar />}
           <div className="bguest__body">
             {isMenu ? <Menu /> : null}
             {isVideo ? <VideoPreview /> : null}

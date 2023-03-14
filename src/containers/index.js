@@ -13,3 +13,6 @@ export {default as SlideFour} from './slideFour/SlideFour';
 export {default as SlideFive} from './slideFive/SlideFive';
 export {default as SlideSix} from './slideSix/SlideSix';
 export {default as SlideSeven} from './slideSeven/SlideSeven';
+export {default as GuestAnalysis} from './guestAnalysis/GuestAnalysis';
+export {default as GuestList} from './guestList/GuestList';
+export {default as GuestReview} from './guestReview/GuestReview';

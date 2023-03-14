@@ -1,0 +1,35 @@
+.bguest__tab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.bguest__tab-icon svg{
+    font-size: 22px;
+    display: flex;
+    align-self: center;
+    color: var(--color-brand);
+   
+}
+
+.bguest__tab-name a{
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 8px;
+    cursor: pointer;
+    color: var(--color-grey);
+}
+
+.bguest__tab-name a:hover{
+    color: var(--color-black);
+}
+
+.bguest__tab-name a.active{
+    color: var(--color-black);
+}
