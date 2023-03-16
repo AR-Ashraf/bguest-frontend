@@ -12,7 +12,7 @@ function Title(props) {
 
   return (
     <div className="bguest__title">
-      <h1>
+      <h1 style={{fontSize:props.fontSize}}>
         {firstLineWords?.map((word, index) => (
           <span
             key={index}
@@ -22,7 +22,7 @@ function Title(props) {
           </span>
         ))}
       </h1>
-      <h1>
+      <h1 style={{fontSize:props.fontSize}}>
         {secondLineWords?.map((word, index) => (
           <span
             key={index}
@@ -32,7 +32,7 @@ function Title(props) {
           </span>
         ))}
       </h1>
-      <h1>
+      <h1 style={{fontSize:props.fontSize}}>
         {thirdLineWords?.map((word, index) => (
           <span
             key={index}

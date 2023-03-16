@@ -18,3 +18,10 @@ export const tokenAction = (tokenState) => {
         tokenState
     }
 }
+
+export const dateViewAction = (dateViewState) => {
+    return {
+        type: 'DATE_VIEW',
+        dateViewState
+    }
+}

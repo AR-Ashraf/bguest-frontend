@@ -32,7 +32,7 @@
   }
   .bguest__toggle-switch input[type="checkbox"]:checked + .switch::before {
     transform: translateX(28px);
-    background-color: var(--color-brand-light);
+    background-color: #eaa8a9;
   }
   .bguest__toggle-switch input[type="checkbox"]:checked + .switch {
     background-color: var(--color-brand);

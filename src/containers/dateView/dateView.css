@@ -1,0 +1,36 @@
+.bguest__dateView{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+    background-color: var(--color-transparent);
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.bguest__dateView-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bguest__dateView-close-button{
+    position: fixed;
+    cursor: pointer;
+    color: var(--color-brand);
+    font-size: 46px;
+    z-index: 2001;
+    right: 0;
+    top:0;
+    margin: 1rem;
+}
+
+.bguest__dateView-close-button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    color: var(--color-brand-dark);
+}

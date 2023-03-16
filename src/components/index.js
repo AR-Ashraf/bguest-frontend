@@ -15,3 +15,6 @@ export {default as AnimatedButton} from './animated_button/AnimatedButton';
 export {default as ImageInfoBox} from './imageInfoBox/ImageInfoBox';
 export {default as ToggleSwitch} from './toggleSwitch/ToggleSwitch';
 export {default as Tab} from './tab/Tab';
+export {default as ScoreCard} from './scoreCard/ScoreCard';
+export {default as Graph} from './graph/Graph';
+export {default as Datepicker} from './datepicker/Datepicker';

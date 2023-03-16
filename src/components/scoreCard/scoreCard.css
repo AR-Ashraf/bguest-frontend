@@ -1,0 +1,37 @@
+.bguest__scoreCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.bguest__scoreCard-icon{
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-brand-light);
+}
+
+.bguest__scoreCard-icon svg{
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+    color: var(--color-brand);
+   
+}
+
+.bguest__scoreCard-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.bguest__scoreCard-name h2{
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--color-brand);
+}

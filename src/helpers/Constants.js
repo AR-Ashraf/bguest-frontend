@@ -8,3 +8,5 @@ export const DASHBOARD = "/dashboard";
 export const GUEST_LIST = "guest-list";
 export const GUEST_REVIEW = "guest-review";
 export const LOGIN_API = "https://receptaredc.xyz/api/account/login";
+export const DAY_GRAPH_API = "https://receptaredc.xyz/api/daygraph";
+export const TIME_GRAPH_API = "https://receptaredc.xyz/api/timegraph";

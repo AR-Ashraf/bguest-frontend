@@ -33,5 +33,8 @@
 .bguest__dashboard-body{
     width: 85%;
     min-height: 100vh;
-    
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
 }

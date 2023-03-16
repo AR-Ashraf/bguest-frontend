@@ -16,3 +16,4 @@ export {default as SlideSeven} from './slideSeven/SlideSeven';
 export {default as GuestAnalysis} from './guestAnalysis/GuestAnalysis';
 export {default as GuestList} from './guestList/GuestList';
 export {default as GuestReview} from './guestReview/GuestReview';
+export {default as DateView} from './dateView/DateView';
