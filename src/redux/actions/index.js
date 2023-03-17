@@ -25,3 +25,10 @@ export const dateViewAction = (dateViewState) => {
         dateViewState
     }
 }
+
+export const guestDataAction = (guestDataState) => {
+    return {
+        type: 'GUESTDATA',
+        guestDataState
+    }
+}

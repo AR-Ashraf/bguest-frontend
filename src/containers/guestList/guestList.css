@@ -1,4 +1,124 @@
 .bguest__guestList{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bguest__guestList-banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bguest__guestList-banner-downloader{
+    display: flex;
+    flex-direction: row;
+}
+
+.bguest__guestList-banner-downloader-icon {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--color-brand-light);
+    margin-left: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.bguest__guestList-banner-downloader-icon:hover {
+   
+    display: block;
+}
+
+.bguest__guestList-banner-downloader-icon-main svg{
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+    color: var(--color-brand);
+}
+
+
+.bguest__guestList-banner-downloader-menu{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: var(--color-bg-dark);
+    border-radius: 12px;
+    width: 250px;
+    z-index: 1;
+    border: 1px solid var(--color-bg-dark);
+}
+
+.bguest__guestList-banner-downloader-menu-tagline{
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.bguest__guestList-banner-downloader-menu .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    margin-top: 1px;
+    padding: 0.5rem;
+}
+
+.bguest__guestList-banner-downloader-menu .menu:hover{
+    background-color: var(--color-bg);
+}
+
+.bguest__guestList-banner-downloader-menu .menu svg{
+    font-size: 14px;
+    color: var(--color-brand);
+}
+
+.bguest__guestList-banner-downloader-menu .menu h1{
+    font-size: 14px;
+    padding-top: 0;
+    margin-left: 8px;
+}
+
+.bguest__guestList-banner-actions{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bguest__guestList-banner-actions-input-field{
+    width: 300px;
+    height: 3rem;
+    border: 1px solid var(--color-brand-light);
+    padding: 1rem;
+    outline: none;
+}
+
+.bguest__guestList-banner-actions-search{
+    padding: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: var(--color-brand-light);
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.bguest__guestList-banner-actions-search svg{
+    color: var(--color-brand);
+    font-size: 20px;
+}
+
+.bguest__guestList-table{
+    margin-top: 2rem;
+    margin-right: 3rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.bguest__guestList-table h1{
+    padding-top: 0;
+    font-size: 12px;
 }

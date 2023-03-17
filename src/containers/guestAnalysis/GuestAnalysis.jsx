@@ -10,15 +10,16 @@ import { IoIosPeople, IoIosRepeat } from "react-icons/io";
 import { MdRateReview } from "react-icons/md";
 import { DAY_GRAPH_API, TIME_GRAPH_API } from "../../helpers/Constants";
 import { useDispatch, useSelector } from "react-redux";
-import Dropdown, { MenuItem } from "@trendmicro/react-dropdown";
+import { dateViewAction } from "../../redux/actions";
+import {DateView} from "../../containers";
 
+import Dropdown, { MenuItem } from "@trendmicro/react-dropdown";
 // Be sure to include styles at some point, probably during your bootstraping
 import "@trendmicro/react-buttons/dist/react-buttons.css";
 import "@trendmicro/react-dropdown/dist/react-dropdown.css";
 
 import "./guestAnalysis.css";
-import { dateViewAction } from "../../redux/actions";
-import {DateView} from "../../containers";
+
 
 function GuestAnalysis() {
   const isToken = useSelector((state) => state.isToken);

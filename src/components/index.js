@@ -18,3 +18,4 @@ export {default as Tab} from './tab/Tab';
 export {default as ScoreCard} from './scoreCard/ScoreCard';
 export {default as Graph} from './graph/Graph';
 export {default as Datepicker} from './datepicker/Datepicker';
+export {default as DotButton} from './dotButton/DotButton';
