@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
+import addGuestCSVReducer from "./addGuestCSVReducer";
+import addGuestFormReducer from "./addGuestFormReducer";
 import dateViewReducer from "./dateViewReducer";
 import guestDataReducer from "./guestDataReducer";
 import menuReducer from "./menuReducer";
@@ -11,7 +13,9 @@ const allReducers = combineReducers(
         isVideo: videoPreviewReducer,
         isToken: tokenReducer,
         isDateView: dateViewReducer,
-        isGuestData: guestDataReducer
+        isGuestData: guestDataReducer,
+        isAddGuestCSV: addGuestCSVReducer,
+        isAddGuestForm: addGuestFormReducer
     }
 );
 

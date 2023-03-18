@@ -111,6 +111,60 @@
     font-size: 20px;
 }
 
+.bguest__guestList-banner-actions-add{
+    display: inline-block;
+    position: relative;
+}
+
+.bguest__guestList-banner-actions-add:hover{
+    display: block;
+}
+
+.bguest__guestList-banner-actions-add-menu{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--color-bg-dark);
+    border-radius: 12px;
+    width: 250px;
+    z-index: 1;
+    border: 1px solid var(--color-bg-dark);
+}
+
+.bguest__guestList-banner-actions-add-menu-tagline{
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.bguest__guestList-banner-actions-add-menu .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    margin-top: 1px;
+    padding: 0.5rem;
+}
+
+.bguest__guestList-banner-actions-add-menu .menu:hover{
+    background-color: var(--color-bg);
+    cursor: pointer;
+}
+
+.bguest__guestList-banner-actions-add-menu .menu svg{
+    font-size: 14px;
+    color: var(--color-brand);
+}
+
+.bguest__guestList-banner-actions-add-menu .menu h1{
+    font-size: 14px;
+    padding-top: 0;
+    margin-left: 8px;
+}
+
 .bguest__guestList-table{
     margin-top: 2rem;
     margin-right: 3rem;

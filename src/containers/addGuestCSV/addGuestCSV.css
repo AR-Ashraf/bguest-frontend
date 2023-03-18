@@ -1,4 +1,4 @@
-.bguest__dateView{
+.bguest__addGuestCSV{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,22 +12,19 @@
     z-index: 2000;
 }
 
-.bguest__dateView-body{
-    width: 30vw;
-    height: 60vh;
+.bguest__addGuestCSV-body{
+    width: 50vw;
     background-color: white;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
-.bguest__dateView-close-button{
+.bguest__addGuestCSV-close-button{
     display: flex;
     align-self: flex-end;
     cursor: pointer;
@@ -37,12 +34,27 @@
     margin: 1rem;
 }
 
-.bguest__dateView-close-button:hover{
+.bguest__addGuestCSV-close-button:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
     color: var(--color-brand-dark);
 }
 
-.bguest__dateView-calender{
-    margin-bottom: 1rem;
+.bguest__addGuestCSV-body-upload{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid var(--color-bg-dark);
+    border-radius: 12px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.bguest__addGuestCSV-body-upload-browse{
+    background-color: var(--color-brand-light);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
 }

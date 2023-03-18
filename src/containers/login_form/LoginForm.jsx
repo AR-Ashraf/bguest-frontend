@@ -26,7 +26,7 @@ async function loginUser(credentials) {
   })
     .then((response) => response.json())
     .then((data) => data);
-}
+};
 
 function LoginForm() {
 

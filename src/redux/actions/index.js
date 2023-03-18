@@ -32,3 +32,17 @@ export const guestDataAction = (guestDataState) => {
         guestDataState
     }
 }
+
+export const addGuestCSVAction = (addGuestCSVState) => {
+    return {
+        type: 'ADD_GUEST_CSV',
+        addGuestCSVState
+    }
+}
+
+export const addGuestFormAction = (addGuestFormState) => {
+    return {
+        type: 'ADD_GUEST_FORM',
+        addGuestFormState
+    }
+}

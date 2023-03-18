@@ -17,3 +17,5 @@ export {default as GuestAnalysis} from './guestAnalysis/GuestAnalysis';
 export {default as GuestList} from './guestList/GuestList';
 export {default as GuestReview} from './guestReview/GuestReview';
 export {default as DateView} from './dateView/DateView';
+export {default as AddGuestCSV} from './addGuestCSV/AddGuestCSV';
+export {default as AddGuestForm} from './addGuestForm/AddGuestForm';

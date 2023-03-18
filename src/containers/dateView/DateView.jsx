@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { useDispatch } from "react-redux";
 import { RiCloseLine } from "react-icons/ri";
 import { dateViewAction } from "../../redux/actions";
-import { Datepicker } from "../../components";
+import { Button, Datepicker } from "../../components";
 import "./dateView.css";
 
 function DateView() {
@@ -21,6 +21,13 @@ function DateView() {
         <div className="bguest__dateView-calender">
           <Datepicker />
         </div>
+        <Button 
+          width="120px"
+          height="50px"
+          borderRadius="8px"
+          fontSize="14px"
+          text="Submit"
+        />
       </div>
     </div>,
     document.getElementById("portal")
