@@ -1,4 +1,54 @@
 .bguest__guestReview{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bguest__guestReview-banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.bguest__guestReview-banner-actions{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bguest__guestReview-banner-actions-input-field{
+    width: 300px;
+    height: 3rem;
+    border: 1px solid var(--color-brand-light);
+    padding: 1rem;
+    outline: none;
+}
+
+.bguest__guestReview-banner-actions-search{
+    padding: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: var(--color-brand-light);
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.bguest__guestReview-banner-actions-search svg{
+    color: var(--color-brand);
+    font-size: 20px;
+}
+
+.bguest__guestReview-table{
+    margin-top: 2rem;
+    margin-right: 3rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.bguest__guestReview-table h1{
+    padding-top: 0;
+    font-size: 12px;
 }
