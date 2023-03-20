@@ -10,24 +10,6 @@ export function OpenLinkNewTab (props) {
   window.open(props, '_blank');
 }
 
-export const fetchGuestData = async (API, isToken, dispatch, action) => {
-
-  try {
-    const response = await fetch(API, {
-      headers: {
-        Authorization:
-          `Token ${localStorage.getItem("saveToken")}` || `Token ${isToken}`,
-      },
-    });
-    const json = await response.json();
-
-    const data = json.results;
-
-    dispatch(action(data));
-  } catch (error) {
-    console.log("error", error);
-  }
-}
 
 export function convertArrayOfObjectsToCSV(array) {
    let result;

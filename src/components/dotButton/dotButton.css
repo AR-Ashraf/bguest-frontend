@@ -19,6 +19,7 @@
     position: absolute;
     display: flex;
     right:0;
+    bottom: 0;
     overflow: hidden;
     flex-direction: column;
     background-color: var(--color-bg-dark);

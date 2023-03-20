@@ -46,3 +46,10 @@ export const addGuestFormAction = (addGuestFormState) => {
         addGuestFormState
     }
 }
+
+export const currentGuestAction = (currentGuestState) => {
+    return {
+        type: 'CURRENT_GUEST',
+        currentGuestState
+    }
+}

@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 import addGuestCSVReducer from "./addGuestCSVReducer";
 import addGuestFormReducer from "./addGuestFormReducer";
+import currentGuestReducer from "./currentGuestReducer";
 import dateViewReducer from "./dateViewReducer";
 import guestDataReducer from "./guestDataReducer";
 import menuReducer from "./menuReducer";
@@ -15,7 +16,8 @@ const allReducers = combineReducers(
         isDateView: dateViewReducer,
         isGuestData: guestDataReducer,
         isAddGuestCSV: addGuestCSVReducer,
-        isAddGuestForm: addGuestFormReducer
+        isAddGuestForm: addGuestFormReducer,
+        isCurrentGuest: currentGuestReducer
     }
 );
 

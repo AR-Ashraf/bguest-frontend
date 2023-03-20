@@ -12,8 +12,8 @@ import { BsTelephone, BsClipboard2Data, BsUpload } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgClose } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
-import { downloadCSV, fetchGuestData } from "../../helpers/Functions";
-import { GUESTDATA_API } from "../../helpers/Constants";
+import { OpenLinkNewTab } from "../../helpers/Functions";
+import { GUESTDATA_API, GUEST_DATA_EXPORT, GUEST_EMAIL_EXPORT, GUEST_PHONE_EXPORT, SEARCH_GUEST_API } from "../../helpers/Constants";
 import { addGuestCSVAction, addGuestFormAction, guestDataAction } from "../../redux/actions";
 import DataTable from "react-data-table-component";
 import "./guestList.css";
@@ -23,28 +23,23 @@ function GuestList() {
   const [isAddGuest, setIsAddGuest] = useState(false);
   const dispatch = useDispatch();
   const isGuestData = useSelector((state) => state.isGuestData);
-  const [guestPhone, setGuestPhone] = useState([]);
-  const [guestEmail, setGuestEmail] = useState([]);
   const isToken = useSelector((state) => state.isToken);
   const isAddGuestCSV = useSelector((state) => state.isAddGuestCSV);
   const isAddGuestForm = useSelector((state) => state.isAddGuestForm);
 
+  const [totalRows, setTotalRows] = useState(0);
+  const paginationComponentOptions = {
+    noRowsPerPage: true
+  };
   const [filterText, setFilterText] = useState("");
   const [resetPaginationToggle, setResetPaginationToggle] = useState(false);
-  const filteredItems = isGuestData.filter(
-    (item) =>
-      (item.username &&
-        item.username.toLowerCase().includes(filterText.toLowerCase())) ||
-      (item.address &&
-        item.address.toLowerCase().includes(filterText.toLowerCase())) ||
-      (item.phone_number &&
-        item.phone_number.toLowerCase().includes(filterText.toLowerCase()))
-  );
 
   const tableStyle = {
     headCells: {
       style: {
         fontSize: "16px",
+        paddingTop: "40px",
+        paddingBottom: "40px",
       },
     },
     cells: {
@@ -99,7 +94,7 @@ function GuestList() {
         name: "Status",
         selector: (row) =>
           row.is_block ? (
-            <Description text="Blocked" />
+            <Description text="Blocked" color="red"/>
           ) : (
             <Description text="Active" />
           ),
@@ -107,7 +102,14 @@ function GuestList() {
         right: true,
       },
       {
-        cell: (row) => <DotButton is_block={row.is_block} />,
+        cell: (row) => 
+        <DotButton 
+        id={row.pk} 
+        name={row.username} 
+        email={row.address} 
+        phone={row.phone_number}
+        is_block={row.is_block} 
+        count={row.count}/>,
         ignoreRowClick: true,
         allowOverflow: true,
         button: true,
@@ -116,30 +118,66 @@ function GuestList() {
     []
   );
 
+  const handleSearch = (searchText) => {
+    fetchGuestData(SEARCH_GUEST_API + `${searchText}`, isToken, dispatch, guestDataAction);
+    setFilterText(searchText);
+  };
+
   const handleClear = () => {
     if (filterText) {
       setResetPaginationToggle(!resetPaginationToggle);
       setFilterText("");
+      fetchGuestData(GUESTDATA_API, isToken, dispatch, guestDataAction);
     }
   };
 
-  const handleDownload = (array, filename) => {
-    var phone = [];
-    var email = [];
-    var i = 0,
-      len = isGuestData.length;
-    while (i < len) {
-      email.push({ "Email Address": isGuestData[i].address });
-      phone.push({ "Phone Number": isGuestData[i].phone_number });
-      i++;
-    }
-    setGuestEmail(email);
-    setGuestPhone(phone);
+  const handleDownload = async (API) => {
+    try {
+      const response = await fetch(API, {
+        headers: {
+          Authorization:
+            `Token ${localStorage.getItem("saveToken")}` || `Token ${isToken}`,
+        },
+      });
+      const json = await response.json();
+      const data = json.response;
+      OpenLinkNewTab(data);
 
-    downloadCSV(array, filename);
+  
+    } catch (error) {
+      console.log("error", error);
+    }
   };
+
+  const handlePageChange = page => {
+		fetchGuestData(GUESTDATA_API + `?page=${page}`, isToken, dispatch, guestDataAction);
+	};
+
+  const fetchGuestData = async (API, isToken, dispatch, action) => {
+
+    try {
+      const response = await fetch(API, {
+        headers: {
+          Authorization:
+            `Token ${localStorage.getItem("saveToken")}` || `Token ${isToken}`,
+        },
+      });
+      const json = await response.json();
+
+      setTotalRows(json.count);
+  
+      const data = json.results;
+  
+      dispatch(action(data));
+  
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
+
 
   useEffect(() => {
+   
     fetchGuestData(GUESTDATA_API, isToken, dispatch, guestDataAction);
     // eslint-disable-next-line
   }, []);
@@ -170,7 +208,7 @@ function GuestList() {
               <div
                 className="menu"
                 onClick={() => {
-                  handleDownload(guestPhone, "bguestphone.csv");
+                  handleDownload(GUEST_PHONE_EXPORT);
                 }}
               >
                 <BsTelephone />
@@ -179,7 +217,7 @@ function GuestList() {
               <div
                 className="menu"
                 onClick={() => {
-                  handleDownload(guestEmail, "bguestemail.csv");
+                  handleDownload(GUEST_EMAIL_EXPORT);
                 }}
               >
                 <AiOutlineMail />
@@ -188,7 +226,7 @@ function GuestList() {
               <div
                 className="menu"
                 onClick={() => {
-                  handleDownload(isGuestData, "bguestdata.csv");
+                  handleDownload(GUEST_DATA_EXPORT);
                 }}
               >
                 <BsClipboard2Data />
@@ -206,7 +244,7 @@ function GuestList() {
                 id="search"
                 name="search"
                 value={filterText}
-                onChange={(e) => setFilterText(e.target.value)}
+                onChange={(e) => handleSearch(e.target.value)}
                 placeholder="Type to Filter"
               />
             </label>
@@ -261,11 +299,15 @@ function GuestList() {
 
       <div className="bguest__guestList-table">
         <DataTable
-          data={filteredItems}
+          data={isGuestData}
           columns={columns}
           customStyles={tableStyle}
           pagination
           paginationResetDefaultPage={resetPaginationToggle}
+          paginationServer
+          paginationTotalRows={totalRows}
+          onChangePage={handlePageChange}
+          paginationComponentOptions={paginationComponentOptions}
           persistTableHead
           highlightOnHover
         />
