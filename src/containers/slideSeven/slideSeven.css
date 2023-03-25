@@ -63,6 +63,21 @@
     height: 90%;
     flex-shrink: 0;
     overflow: hidden;
-    
 }
 
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__slideSeven-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__slideSeven-body-contents-form p{
+        font-size: 22px;
+    }
+
+    .bguest__slideSeven-body-map{
+        width: 55%;
+        height: 60%;
+    }
+}

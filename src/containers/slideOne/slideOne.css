@@ -96,3 +96,36 @@
     height: 80px;
     cursor: pointer;
 }
+
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__slideOne-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__slideOne-body-animation-cook-player{
+        width: 300px;
+        height: 300px;
+        min-width: 300px;
+        margin-top: 8rem;
+    }
+
+    .bguest__slideOne-body-animation-bowl-player{
+        margin-top: 4rem;
+        margin-left: -5rem;
+    }
+    
+    .bguest__slideOne-body-animation-bowl-player .bowl-player{
+        width: 200px;
+        height: 200px;
+    }
+
+    .bguest__slideOne-body-animation-video{
+        width: 500px;
+        height: 500px;
+        margin-top: 12rem;
+        margin-left: -24rem;
+    }
+}

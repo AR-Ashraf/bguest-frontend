@@ -23,8 +23,10 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 2rem;
 }
 
@@ -323,4 +325,46 @@
 .bguest__overview-demo-booking{
     margin-top: 5rem;
     margin-bottom: 10rem;
+}
+
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__overview-banner-animations .animation{
+        margin: 2px;
+    }
+
+    .bguest__overview-analytics-contents{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__overview-analytics-contents-video{
+        width: 60%;
+        height: 300px;
+        margin-right: 1rem;
+    }
+
+    .bguest__overview-analytics-contents-video .video{
+        width: 100%;
+        height: 300px;
+    }
+
+    .bguest__overview-email-contents{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bguest__overview-email-contents-video{
+        width: 60%;
+        height: 300px;
+        margin-left: 1rem;
+    }
+
+    .bguest__overview-email-contents-video .video{
+        width: 100%;
+        height: 300px;
+    }
 }

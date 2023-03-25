@@ -12,8 +12,16 @@
 
 .bguest__featureBulletRight h1{
     font-family: "Poppins";
+    text-align: end;
     font-size: 1.3rem;
     font-weight: 800;
     color: var(--color-black);
     margin-right: 5px;
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__featureBulletRight h1{
+        font-size: 1.1rem;
+    }
 }

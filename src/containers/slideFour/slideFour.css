@@ -55,3 +55,26 @@
     height: 500px;
     
 }
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__slideFour-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__slideFour-body-contents-thumb-animations{
+        margin-top: 2rem;
+    }
+
+    .bguest__slideFour-body-animation{
+        width: 55%;
+        height: 70%;
+        
+    }
+    
+    .bguest__slideFour-body-animation .animation2{
+        height: 450px;
+        
+    }
+}

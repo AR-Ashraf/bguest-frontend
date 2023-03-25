@@ -1,7 +1,7 @@
 .bguest__thumbAnimation{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     height: 100%;
@@ -35,4 +35,20 @@
 .bguest__thumbAnimation-animation .animation {
    width: 150px;
    height: 150px;
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__thumbAnimation{
+        margin-right: 8px;
+        min-width: 180px;
+    }
+    .bguest__thumbAnimation-animation{
+        width: 180px;
+        height: 150px;
+    }
+    .bguest__thumbAnimation-animation .animation {
+        width: 120px;
+        height: 120px;
+     }
 }

@@ -52,3 +52,10 @@
 .bguest__standardPricing-features .feature{
     margin-top: 8px;
 }
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__standardPricing{
+        width: 30vw;
+    }
+}

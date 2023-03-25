@@ -65,6 +65,8 @@
 .bguest__menu-body-animation{
     width: 70%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .bguest__menu-footer{
@@ -145,3 +147,18 @@
     100% { left: 100vw; }
   }
   
+  /* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__menu-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__menu-close-button{
+        right: 2rem;
+    }
+
+    .bguest__menu-body-animation img{
+        width: 100%;
+    }
+}

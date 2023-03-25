@@ -25,21 +25,28 @@ function About() {
         </div>
        
         <div className="bguest__about-banner-pillars">
+          <div className="box">
           <ImageInfoBox
             image={<RiTeamFill />}
             title="We are Passionate"
             description="We are experienced & passionate team constantly working with our clients"
           />
-          <ImageInfoBox
+          </div>
+         <div className="box">
+         <ImageInfoBox
+          className="box"
             image={<MdTipsAndUpdates />}
             title="We Listen"
             description="We listen what our clients needs to serve their Guests better & execute"
           />
+         </div>
+          <div className="box">
           <ImageInfoBox
             image={<FaHandsHelping />}
             title="We Serve"
             description="We serve our clients to provide the best experience to their guests"
           />
+          </div>
         </div>
         <div className="bguest__about-banner-bottom">
           <Description text="If you have a good experience in a restaurant, you tell 2 people. If you have a bad experience, you tell 10 people." />
@@ -55,7 +62,7 @@ function About() {
         src={teamImage}
         alt="bGuest working with their clients"
       />
-      <Description text="We work with our clients together. Our every client is a part of our vision"/>
+      <Description text="We work with our clients together. Our every client is part of our vision"/>
       </div>
 
       {/*------------- Mission Statement --------------*/}

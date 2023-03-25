@@ -28,7 +28,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 2rem;
 }
@@ -56,6 +56,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 10rem;
+    text-align: center;
 }
 
 .bguest__about-team img{
@@ -130,4 +131,39 @@
 .bguest__about-demo{
     margin-top: 10rem;
     margin-bottom: 10rem;
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__about-team img{
+        width: 70%;
+    }
+
+    .bguest__about-mission{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bguest__about-mission-contents{
+        width: 60%;
+    }
+
+    .bguest__about-vision{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bguest__about-vision-contents{
+        width: 60%;
+    }
+
+    .bguest__about-vision-contents-title h1{
+        text-align: end;
+    }
+    
+    .bguest__about-vision-contents-description h1{
+        text-align: end;
+    }
 }

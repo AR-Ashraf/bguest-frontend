@@ -60,3 +60,14 @@
 .bguest__premiumPricing-features .feature{
     margin-top: 8px;
 }
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__premiumPricing{
+        width: 30vw;
+    }
+
+    .bguest__premiumPricing-tag {
+        width: 70px;
+    }
+}

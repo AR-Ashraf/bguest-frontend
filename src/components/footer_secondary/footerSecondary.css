@@ -69,4 +69,19 @@
     color: var(--color-brand);
 }
 
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__footerSecondary{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .bguest__footerSecondary-logo img{
+        width: 15vw;
+    }
+
+    .bguest__footerSecondary-permalinks-extras h1{
+        margin-right: 1rem;
+    }
+}
 

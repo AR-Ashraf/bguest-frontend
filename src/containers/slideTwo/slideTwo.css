@@ -49,3 +49,26 @@
 .bguest__slideTwo-body-animation img{
     height: 40%;
 }
+
+
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__slideTwo-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__slideTwo-body-contents-thumb-animations{
+        margin-top: 2rem;
+    }
+
+    .bguest__slideTwo-body-animation{
+        width: 55%;
+        height: 70%;
+    }
+    
+    .bguest__slideTwo-body-animation img{
+        height: 35%;
+    }
+}

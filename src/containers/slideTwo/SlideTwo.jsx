@@ -19,7 +19,7 @@ function SlideTwo() {
             thirdLineText="Grow More"
             highlightedWord="Profit"
           />
-          <Description text="Research shows that only 5% increase in Guest Retention increases the profits by 125%!" />
+          <Description text="Research shows that only 5% increase in Guest Retention increases the profits by 125%!" fontSize="22px"/>
           <div className="bguest__slideTwo-body-contents-thumb-animations">
           <ThumbAnimation player={revenue} text='Still Struggling With Revenue?'/>
           <ThumbAnimation player={money} text='We Will Help You To Earn More With Less Effort'/>

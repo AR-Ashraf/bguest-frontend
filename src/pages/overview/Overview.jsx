@@ -102,6 +102,7 @@ function Overview() {
         <div className="bguest__overview-analytics-contents">
           <div className="bguest__overview-analytics-contents-video">
             <iframe
+              className="video"
               src="https://www.youtube.com/embed/E7wJTI-1dvQ"
               width="700px"
               height="400px"
@@ -180,6 +181,7 @@ function Overview() {
           </div>
           <div className="bguest__overview-email-contents-video">
             <iframe
+             className="video"
               src="https://www.youtube.com/embed/lupMaUaQ1PE"
               width="700px"
               height="400px"

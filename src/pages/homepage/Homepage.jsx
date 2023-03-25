@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useEffect, useState }  from "react";
 import { SlideOne, SlideTwo, SlideThree, SlideFour, SlideFive, SlideSix, SlideSeven } from "../../containers";
 import { register } from "swiper/element/bundle";
 import "./homepage.css";
@@ -6,6 +6,16 @@ import "./homepage.css";
 register();
 
 function Homepage() {
+
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 992px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 992px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
 
   return (
     <div className="bguest__homepage">
@@ -20,7 +30,7 @@ function Homepage() {
         slides-per-view='1'
         speed='500'
         no-swipingClass= 'swiper-no-swiping'
-        allow-touch-move="false"
+        allow-touch-move={!matches}
         style={{
           "--swiper-pagination-color": "#E04648",
           "--swiper-pagination-bullet-inactive-color": "#080808",

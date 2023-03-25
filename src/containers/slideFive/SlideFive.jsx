@@ -17,7 +17,7 @@ function SlideFive() {
             thirdLineText=""
             highlightedWord="Dashboard"
           />
-          <Description text="All Your Guest Engagements & Automation In A Single Dashboard!" />
+          <Description text="All Your Guest Engagements & Automation In A Single Dashboard!" fontSize="22px"/>
           <div className="bguest__slideFive-body-contents-features">
           <FeatureBulletLeft color="#E04648" text="Guest Engagement InfoGraphics"/>
           <FeatureBulletLeft color="#E04648" text="Date & Time Wise Data Visuals"/>

@@ -3,7 +3,7 @@ import './imageInfoBox.css';
 
 function ImageInfoBox(props) {
     return (
-        <div className='bguest__imageInfoBox'>
+        <div className='bguest__imageInfoBox' style={{height: props.height}}>
             <div className="bguest__imageInfoBox-Image">
             {props.image}
             </div>

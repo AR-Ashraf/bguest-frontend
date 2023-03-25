@@ -83,3 +83,14 @@
     transition: all 0.3s ease-in-out;
     color: var(--color-brand-dark);
 }
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__navbar {
+        padding: 1rem;
+    }
+
+    .bguest__navbar-menu{
+        max-width: 60vw;
+    }
+}

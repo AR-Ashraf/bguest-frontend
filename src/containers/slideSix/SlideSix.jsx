@@ -27,7 +27,7 @@ function SlideSix() {
             thirdLineText="Through Router"
             highlightedWord="Router"
           />
-          <Description text="Our customized router firmware will help you to remain connected with your Guests!" />
+          <Description text="Our customized router firmware will help you to remain connected with your Guests!" fontSize="22px"/>
           <div className="bguest__slideSix-body-contents-thumb-animations">
           <ThumbAnimation player={needyGuest} />
           <ThumbAnimation player={wifiConnect} />
@@ -37,7 +37,7 @@ function SlideSix() {
         </div>
         <div className="bguest__slideSix-body-animation">
         <img className="image1" src={guestLady} alt='Lady Guest Using bGuest' />
-        <div className="bguest__slideSix-body-animation-man-wth-wifi">
+        <div className="bguest__slideSix-body-animation-man-with-wifi">
         <InView onChange={setWiFiInView}>
             {({ ref, inView }) => (
               <div ref={ref}>

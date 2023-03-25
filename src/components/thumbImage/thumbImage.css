@@ -1,7 +1,7 @@
 .bguest__thumbImage{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     height: 100%;
@@ -35,4 +35,20 @@
 .bguest__thumbImage-Image .Image {
    width: 150px;
    height: 150px;
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .bguest__thumbImage{
+        margin-right: 8px;
+        min-width: 180px;
+    }
+    .bguest__thumbImage-Image{
+        width: 180px;
+        height: 150px;
+    }
+    .bguest__thumbImage-Image .Image {
+        width: 120px;
+        height: 120px;
+     }
 }
