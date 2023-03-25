@@ -107,3 +107,38 @@
     }
 }
 
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__footerSecondary{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__footerSecondary-logo img{
+        width: 10rem;
+        align-self: center;
+    }
+
+    .bguest__footerSecondary-permalinks{
+        align-items: center;
+    }
+
+    .bguest__footerSecondary-permalinks-extras{
+        flex-direction: column;
+    }
+
+    .bguest__footerSecondary-permalinks-extras h1{
+        margin-right: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .bguest__footerSecondary-permalinks-extras p{
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+

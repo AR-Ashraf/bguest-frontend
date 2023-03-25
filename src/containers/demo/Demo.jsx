@@ -33,6 +33,14 @@ function Demo() {
         fontSize="24px" 
         onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}/>
         </div>
+        <div className="bGuest__demo-button-animation-mobile">
+        <AnimatedButton 
+        width="300px"
+        height="80px" 
+        text="Book A Demo" 
+        fontSize="20px" 
+        onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}/>
+        </div>
       </div>
     </div>
   );

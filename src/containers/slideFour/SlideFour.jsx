@@ -47,6 +47,20 @@ function SlideFour() {
           </InView>
         
         </div>
+        <div className="bguest__slideFour-body-contents-mobile">
+          <Tagline text="YOUR BENEFITS" />
+          <Title
+            firstLineText="You Will"
+            secondLineText="Save"
+            thirdLineText="Time & Cost"
+            highlightedWord="Save"
+          />
+          <Description text="We envision to automate the Restaurant industry. And you will be vital part of this pioneering."/>
+          <div className="bguest__slideFour-body-contents-thumb-animations">
+          <ThumbAnimation player={manualWork} text='Still Work Manually?'/>
+          <ThumbAnimation player={autoTasking} text='We Will Automate Everything For You'/>
+          </div>
+        </div>
       </div>
       <div className="bguest__slideFour-footer">
       <Footer slideNo='IV'/>

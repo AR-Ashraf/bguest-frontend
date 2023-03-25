@@ -95,3 +95,35 @@
         font-size: 14px;
     }
 }
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__basicPricing{
+        width: 80vw;
+    }
+
+    .bguest__basicPricing-button{
+        display: none;
+    }
+
+    .bguest__basicPricing-button-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .bguest__basicPricing h2{
+        font-size: 20px;
+    }
+    
+    .bguest__basicPricing h3{
+        font-size: 14px;
+    }
+
+    .bguest__basicPricing-price p{
+        font-size: 34px;
+    }
+
+    .bguest__basicPricing-features h1{
+        font-size: 14px;
+    }
+}

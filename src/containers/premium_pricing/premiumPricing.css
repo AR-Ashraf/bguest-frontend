@@ -111,3 +111,39 @@
         font-size: 14px;
     }
 }
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__premiumPricing{
+        width: 80vw;
+    }
+
+    .bguest__premiumPricing-button{
+        display: none;
+    }
+
+    .bguest__premiumPricing-button-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .bguest__premiumPricing-tag {
+        width: 70px;
+    }
+
+    .bguest__premiumPricing h2{
+        font-size: 20px;
+    }
+    
+    .bguest__premiumPricing h3{
+        font-size: 14px;
+    }
+
+    .bguest__premiumPricing-price p{
+        font-size: 34px;
+    }
+
+    .bguest__premiumPricing-features h1{
+        font-size: 14px;
+    }
+}

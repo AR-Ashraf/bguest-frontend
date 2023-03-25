@@ -11,6 +11,10 @@
     display: none;
 }
 
+.bGuest__demo-button-animation-mobile{
+    display: none;
+}
+
 .bGuest__demo-subTitle h1{
     text-align: center;
     font-size: 18px;
@@ -31,6 +35,34 @@
     }
 
     .bGuest__demo-button-animation-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
+}
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bGuest__demo{
+        padding: 1rem;
+    }
+
+    .bGuest__demo h1{
+        text-align: center;
+    }
+
+    .bGuest__demo-subTitle h1{
+        font-size: 14px;
+    }
+
+    .bGuest__demo-button-animation{
+        display: none;
+    }
+
+    .bGuest__demo-button-animation-tablet{
+        display: none;
+    }
+
+    .bGuest__demo-button-animation-mobile{
         display: block;
         padding-top: 1rem;
     }

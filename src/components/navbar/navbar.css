@@ -84,6 +84,10 @@
     color: var(--color-brand-dark);
 }
 
+.bguest__navbar-menu-button-mobile{
+    display: none;
+}
+
 /* Small Laptop Media */
 @media only screen and (max-width: 1024px) and (min-width: 768px)  {
     .bguest__navbar {
@@ -107,5 +111,30 @@
 
     .bguest__navbar-menu a{
         font-size: 12px;
+    }
+}
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__navbar {
+        padding: 1rem;
+    }
+
+    .bguest__navbar-menu{
+        display: none;
+    }
+
+    .bguest__navbar-menu-button-mobile{
+        display: block;
+        cursor: pointer;
+        color: var(--color-brand);
+        font-size: 36px;
+    }
+    
+    .bguest__navbar-menu-button-mobile:hover{
+        will-change: transform;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        color: var(--color-brand-dark);
     }
 }

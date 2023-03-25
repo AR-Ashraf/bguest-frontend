@@ -31,3 +31,14 @@
     transition: all 0.3s ease-in-out;
     color: var(--color-brand-dark);
 }
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__videoPreview{
+        padding: 5px;
+    }
+
+    .bguest__videoPreview-close-button{
+        font-size: 32px;
+    }
+}

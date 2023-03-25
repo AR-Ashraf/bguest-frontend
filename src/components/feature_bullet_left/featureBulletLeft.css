@@ -34,3 +34,13 @@
         font-size: 0.9rem;
     }
 }
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__featureBulletLeft-icon{
+        font-size: 0.9rem;
+    }
+    .bguest__featureBulletLeft h1{
+        font-size: 0.9rem;
+    }
+}

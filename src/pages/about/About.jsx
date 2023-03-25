@@ -25,27 +25,21 @@ function About() {
         </div>
        
         <div className="bguest__about-banner-pillars">
-          <div className="box">
-          <ImageInfoBox
+        <ImageInfoBox
             image={<RiTeamFill />}
             title="We are Passionate"
             description="We are experienced & passionate team constantly working with our clients"
           />
-          </div>
-         <div className="box">
          <ImageInfoBox
             image={<MdTipsAndUpdates />}
             title="We Listen"
             description="We listen what our clients needs to serve their Guests better & execute"
           />
-         </div>
-          <div className="box">
           <ImageInfoBox
             image={<FaHandsHelping />}
             title="We Serve"
             description="We serve our clients to provide the best experience to their guests"
           />
-          </div>
         </div>
         <div className="bguest__about-banner-bottom">
           <Description text="If you have a good experience in a restaurant, you tell 2 people. If you have a bad experience, you tell 10 people." />
@@ -93,6 +87,9 @@ function About() {
           <div className="bguest__about-vision-contents-description">
             <Description text="At bGuest, we're dreaming of a world where restaurant owners can make daily business decisions with the help of artificial intelligence. With our innovative technology, we're creating a future where menus are tailored to each guest's preferences, staffing decisions are optimized for maximum efficiency, and personalized marketing strategies are implemented to reach the right customers at the right time. But it's not just about the business side of things - in this world, guests are treated like family. We envision a future where every guest feels truly cared for, with their unique health concerns and dietary needs taken into consideration with every meal."/>
           </div>
+        </div>
+        <div className="bguest__about-vision-image-mobile">
+            <img src={vision} alt="Vision Cover of bGuest"/>
         </div>
       </div>
 

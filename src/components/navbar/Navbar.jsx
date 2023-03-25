@@ -75,6 +75,10 @@ const Navbar = () => {
           onClick={() => dispatch(menuAction(!isMenu))}
         />
       </div>
+      <CgMenuRight
+          className="bguest__navbar-menu-button-mobile"
+          onClick={() => dispatch(menuAction(!isMenu))}
+        />
     </div>
   );
 };

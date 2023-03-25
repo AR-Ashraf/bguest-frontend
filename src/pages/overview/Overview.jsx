@@ -151,6 +151,18 @@ function Overview() {
         </div>
 
         <div className="bguest__overview-email-contents">
+        <div className="bguest__overview-email-contents-video-mobile">
+            <iframe
+             className="video"
+              src="https://www.youtube.com/embed/lupMaUaQ1PE"
+              width="700px"
+              height="400px"
+              frameborder="0"
+              allow="encrypted-media"
+              allowfullscreen="true"
+              title="video"
+            />
+          </div>
           <div className="bguest__overview-email-contents-benefits">
             <div className="bguest__overview-email-contents-benefits-tag">
               <Tagline text="YOU ARE GETTING" />
@@ -258,6 +270,24 @@ function Overview() {
           <Description text="Your Guests will use your restaurant's free WiFi & will get personalized experience in every service" />
         </div>
         <div className="bguest__overview-login-contents">
+        <div className="bguest__overview-login-contents-animation-mobile">
+            <InView onChange={setLoginInView}>
+              {({ ref, inView }) => (
+                <div ref={ref}>
+                  {inView ? (
+                    <Player
+                      src={JSON.parse(JSON.stringify(login))}
+                      loop
+                      autoplay
+                      className="loginAnimation"
+                    />
+                  ) : (
+                    <Placeholder />
+                  )}
+                </div>
+              )}
+            </InView>
+          </div>
           <div className="bguest__overview-login-contents-benefits">
             <div className="bguest__overview-login-contents-benefits-tag">
               <Tagline text="YOU ARE GETTING" />

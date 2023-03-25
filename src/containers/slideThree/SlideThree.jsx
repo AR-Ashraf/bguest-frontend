@@ -68,6 +68,20 @@ function SlideThree() {
         
         
         </div>
+        <div className="bguest__slideThree-body-contents-mobile">
+          <Tagline text="YOUR BENEFITS" />
+          <Title
+            firstLineText="Your"
+            secondLineText="Guest Engagement"
+            thirdLineText="Will Increase"
+            highlightedWord="Increase"
+          />
+          <Description text="We will remember the experiences of your Guests with your restaurant & help you to understand them better."/>
+          <div className="bguest__slideThree-body-contents-thumb-animations">
+          <ThumbImage image={guestTalk1} text='Want To Serve Better?'/>
+          <ThumbImage image={guestTalk2} text='We Will Help You To Remember & Serve Your Guests'/>
+          </div>
+        </div>
       </div>
       <div className="bguest__slideThree-footer">
       <Footer slideNo='III'/>

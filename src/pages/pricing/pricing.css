@@ -17,6 +17,10 @@
     margin-top: 5rem;
 }
 
+.bguest__pricing-top-content h1{
+    text-align: center;
+}
+
 /* Toggle Section */
 
 .bguest__pricing-toggle-section{
@@ -76,8 +80,13 @@
     display: none;
 }
 
+.bguest__pricing-packages-customized-button-animation-mobile{
+    display: none;
+}
+
 .bguest__pricing-packages-customized-title h1{
     font-size: 3em;
+    text-align: center;
 }
 
 /* Tablet Media */
@@ -95,6 +104,36 @@
     }
 
     .bguest__pricing-packages-customized-button-animation-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
+}
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__pricing-packages{
+        width: 100%;
+        overflow-x: scroll;
+        margin-bottom: 5rem;
+    }
+
+    .bguest__pricing-packages .package{
+        margin: 5px;
+    }
+
+    .bguest__pricing-packages-customized-title h1{
+        font-size: 2em;
+    }
+
+    .bguest__pricing-packages-customized-button-animation{
+        display: none;
+    }
+
+    .bguest__pricing-packages-customized-button-animation-tablet{
+        display: none;
+    }
+
+    .bguest__pricing-packages-customized-button-animation-mobile{
         display: block;
         padding-top: 1rem;
     }

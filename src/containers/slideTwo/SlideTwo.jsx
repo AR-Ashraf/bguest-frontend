@@ -29,6 +29,20 @@ function SlideTwo() {
         <img src={retain2} alt='Guest Retention' />
         <img src={retain1} alt='Guest Retention' />
         </div>
+        <div className="c">
+          <Tagline text="YOUR BENEFITS" />
+          <Title
+            firstLineText="Retain More"
+            secondLineText="Profit More"
+            thirdLineText="Grow More"
+            highlightedWord="Profit"
+          />
+          <Description text="Research shows that only 5% increase in Guest Retention increases the profits by 125%!"/>
+          <div className="bguest__slideTwo-body-contents-thumb-animations">
+          <ThumbAnimation player={revenue} text='Still Struggling With Revenue?'/>
+          <ThumbAnimation player={money} text='We Will Help You To Earn More With Less Effort'/>
+          </div>
+        </div>
       </div>
       <div className="bguest__slideTwo-footer">
       <Footer slideNo='II'/>

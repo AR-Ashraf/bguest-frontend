@@ -109,6 +109,39 @@ function SlideOne() {
                 </video>
             </div>
         </div>
+        <div className="bguest__slideOne-body-contents-mobile">
+          <Tagline text="WHAT WE ARE" />
+          <Title
+            firstLineText="We Are Helping"
+            secondLineText="Restaurants"
+            thirdLineText="To Retain Guests"
+            highlightedWord="Restaurants"
+          />
+          <Description text="Understand your Guests better and serve them better. Retain your happy Guests more."/>
+          <div className="bguest__slideOne-body-contents-process">
+          <h1>How bGuest Works</h1>
+          <div onClick={() => {dispatch(videoPreviewAction(true))}}>
+          <InView onChange={setVideoButtonInView}>
+            {({ ref, inView }) => (
+              <div ref={ref}>
+                {
+                  inView
+                  ? <Player
+                src={JSON.parse(JSON.stringify(videoButton))}
+                loop
+                autoplay
+                className="video-button"
+                />
+                :
+                <Placeholder/>
+                }
+              </div>
+            )}
+          </InView>
+          
+          </div>
+          </div>
+        </div>
       </div>
       <div className="bguest__slideOne-footer">
       <Footer slideNo='I'/>

@@ -4,5 +4,11 @@
     font-weight: 400;
     color: var(--color-tagline);
     letter-spacing: 4.2px;
-   
+}
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__tagline h1{
+        font-size: 12px;
+    }
 }

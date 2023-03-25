@@ -11,3 +11,14 @@
   .bguest__bg{
     width: 100vw;
   }
+
+  /* Mobile Media */
+@media only screen and (max-width: 599px){
+  body {
+    overflow-x: hidden;
+  }
+
+  .bguest__bg{
+    overflow-x: hidden;
+  }
+}

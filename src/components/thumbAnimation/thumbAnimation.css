@@ -76,3 +76,23 @@
         font-size: 11px;
     }
 }
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__thumbAnimation{
+        margin-right: 5px;
+        min-width: 150px;
+    }
+    .bguest__thumbAnimation-animation{
+        width: 150px;
+        height: 100px;
+    }
+    .bguest__thumbAnimation-animation .animation {
+        width: 100px;
+        height: 100px;
+     }
+
+     .bguest__thumbAnimation h1{
+        font-size: 10px;
+    }
+}

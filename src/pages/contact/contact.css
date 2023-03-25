@@ -1,102 +1,139 @@
-.bguest__contact{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .bguest__contact-body{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 80vh;
-      padding-left: 5rem;
-      padding-right: 5rem;
-  }
-  
-  .bguest__contact-body-contents{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      width: 40%;
-      height: 100%;
-  }
-  
-  .bguest__contact-body-contents-description{
-      display: flex;
-      flex-direction: row;
-  }
-  
-  .bguest__contact-body-contents-description .description{
-      margin-right: 12px;
-      margin-top: 8px;
-  }
-  
-  .bguest__contact-body-contents-description svg{
-      font-size: 20px;
-      color: var(--color-black);
-      margin-bottom: -1rem;
-  }
-  
-  .bguest__contact-body-contents-form{
-      margin-top: 1rem;
-      width: 80%;
-  }
-  
-  .bguest__contact-body-contents-form p{
-      margin-top: 1rem;
-      font-family: "Poppins";
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--color-black);
-      font-weight: lighter;
-  }
-  
-  .bguest__contact-body-map{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: white;
-      align-items: center;
-      width: 50%;
-      height: 90%;
-      flex-shrink: 0;
-      overflow: hidden;
-      
-  }
-  
-  
+.bguest__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.bguest__contact-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.bguest__contact-body-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.bguest__contact-body-contents-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.bguest__contact-body-contents-description .description {
+  margin-right: 12px;
+  margin-top: 8px;
+}
+
+.bguest__contact-body-contents-description svg {
+  font-size: 20px;
+  color: var(--color-black);
+  margin-bottom: -1rem;
+}
+
+.bguest__contact-body-contents-form {
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.bguest__contact-body-contents-form p {
+  margin-top: 1rem;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+  font-weight: lighter;
+}
+
+.bguest__contact-body-map-mobile {
+  display: none;
+}
+
+.bguest__contact-body-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  width: 50%;
+  height: 90%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
 /* Small Laptop Media */
-@media only screen and (max-width: 1024px) and (min-width: 768px)  {
-    .bguest__contact-body{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .bguest__contact-body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-    .bguest__contact-body-contents-form p{
-        font-size: 14px;
-    }
+  .bguest__contact-body-contents-form p {
+    font-size: 14px;
+  }
 
-    .bguest__contact-body-map{
-        width: 55%;
-        height: 60%;
-    }
+  .bguest__contact-body-map {
+    width: 55%;
+    height: 60%;
+  }
 }
 
 /* Tablet Media */
-@media only screen and (max-width: 768px) and (min-width: 600px)   {
-    .bguest__contact-body{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .bguest__contact-body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-    .bguest__contact-body-contents-form p{
-        font-size: 12px;
-    }
+  .bguest__contact-body-contents-form p {
+    font-size: 12px;
+  }
 
-    .bguest__contact-body-map{
-        width: 55%;
-        height: 60%;
-    }
+  .bguest__contact-body-map {
+    width: 55%;
+    height: 60%;
+  }
+}
+
+/* Mobile Media */
+@media only screen and (max-width: 599px) {
+  .bguest__contact-body {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 3rem;
+  }
+
+  .bguest__contact-body-contents-form p {
+    font-size: 12px;
+  }
+
+  .bguest__contact-body-map-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+
+  .bguest__contact-body-map {
+    display: none;
+  }
+
+  .bguest__contact-body-contents {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
 }

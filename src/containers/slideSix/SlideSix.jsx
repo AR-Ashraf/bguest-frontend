@@ -80,6 +80,24 @@ function SlideSix() {
         </div>
         
         </div>
+        <div className="bguest__slideSix-body-contents-mobile">
+          <Tagline text="OUR FEATURES" />
+          <Title
+            firstLineText="Single Login"
+            secondLineText="Free WiFi"
+            thirdLineText="Through Router"
+            highlightedWord="Router"
+          />
+          <Description text="Our customized router firmware will help you to remain connected with your Guests!"/>
+          <div className="bguest__slideSix-body-contents-thumb-animations">
+          <ThumbAnimation player={needyGuest} />
+          <div className="temporary">
+          <ThumbAnimation player={wifiConnect} />
+          </div>
+          <ThumbAnimation player={routerLogin} />
+          </div>
+          <h1 className="animation-tag">Keep Your Guests Connected On Arrival Automatically</h1>
+        </div>
       </div>
       <div className="bguest__slideSix-footer">
       <Footer slideNo='VI'/>

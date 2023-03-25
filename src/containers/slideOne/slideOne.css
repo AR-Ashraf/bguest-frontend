@@ -25,7 +25,7 @@
 
 .bguest__slideOne-body-animation{
     display: flex;
-    justify-content: row;
+    flex-direction: row;
     align-items: flex-start;
     width: 60%;
     height: 100%;
@@ -96,6 +96,10 @@
     cursor: pointer;
 }
 
+.bguest__slideOne-body-contents-mobile{
+    display: none;
+}
+
 
 
 
@@ -160,5 +164,82 @@
         height: 350px;
         margin-top: 10rem;
         margin-left: -12rem;
+    }
+}
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__slideOne{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .bguest__slideOne-body{
+        width: 100%;
+        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bguest__slideOne-body-contents{
+        display: none;
+    }
+
+    .bguest__slideOne-body-contents-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bguest__slideOne-body-animation{
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .bguest__slideOne-body-animation-cook-player{
+        width: 180px;
+        height: 180px;
+        min-width: 180px;
+        margin-top: 3rem;
+    }
+
+    .bguest__slideOne-body-animation-bowl-player{
+        margin-top: 2rem;
+        margin-left: -3rem;
+    }
+    
+    .bguest__slideOne-body-animation-bowl-player .bowl-player{
+        width: 100px;
+        height: 100px;
+    }
+
+    .bguest__slideOne-body-animation-video{
+        width: 300px;
+        height: 300px;
+        margin-top: 5rem;
+        margin-left: -12rem;
+    }
+
+    .bguest__slideOne-body-contents-process h1{
+        font-size: 12px;
+    }
+
+    .bguest__slideOne-body-contents-process .video-button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .bguest__slideOne-footer{
+        display: none;
     }
 }

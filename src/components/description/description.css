@@ -20,3 +20,10 @@
         font-size: 13px;
     }
 }
+
+/* Mobile Media */
+@media only screen and (max-width: 599px){
+    .bguest__description h1{
+        font-size: 12px;
+    }
+}
