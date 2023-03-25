@@ -19,8 +19,15 @@
     height: 100%;
 }
 
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+    .bguest__login-body{
+        width: 50%;
+    }
+}
+
 /* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+@media only screen and (max-width: 768px) and (min-width: 600px)   {
     .bguest__login-body{
         width: 50%;
     }

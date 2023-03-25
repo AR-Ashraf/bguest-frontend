@@ -34,7 +34,6 @@ function About() {
           </div>
          <div className="box">
          <ImageInfoBox
-          className="box"
             image={<MdTipsAndUpdates />}
             title="We Listen"
             description="We listen what our clients needs to serve their Guests better & execute"

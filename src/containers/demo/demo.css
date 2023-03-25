@@ -7,8 +7,31 @@
     padding: 5rem;
 }
 
+.bGuest__demo-button-animation-tablet{
+    display: none;
+}
+
 .bGuest__demo-subTitle h1{
     text-align: center;
     font-size: 18px;
 }
 
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .bGuest__demo{
+        padding: 1rem;
+    }
+
+    .bGuest__demo-subTitle h1{
+        font-size: 16px;
+    }
+
+    .bGuest__demo-button-animation{
+        display: none;
+    }
+
+    .bGuest__demo-button-animation-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
+}

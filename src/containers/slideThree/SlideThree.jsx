@@ -23,7 +23,7 @@ function SlideThree() {
             thirdLineText="Will Increase"
             highlightedWord="Increase"
           />
-          <Description text="We will remember the experiences of your Guests with your restaurant & help you to understand them better." fontSize="22px"/>
+          <Description text="We will remember the experiences of your Guests with your restaurant & help you to understand them better."/>
           <div className="bguest__slideThree-body-contents-thumb-animations">
           <ThumbImage image={guestTalk1} text='Want To Serve Better?'/>
           <ThumbImage image={guestTalk2} text='We Will Help You To Remember & Serve Your Guests'/>

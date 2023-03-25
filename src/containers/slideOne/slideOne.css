@@ -30,7 +30,6 @@
     width: 60%;
     height: 100%;
     flex-shrink: 0;
-    
 }
 
 .bguest__slideOne-body-animation-cook-player{
@@ -98,8 +97,10 @@
 }
 
 
-/* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+
+
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
     .bguest__slideOne-body{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -127,5 +128,37 @@
         height: 500px;
         margin-top: 12rem;
         margin-left: -24rem;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .bguest__slideOne-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__slideOne-body-animation-cook-player{
+        width: 200px;
+        height: 200px;
+        min-width: 200px;
+        margin-top: 8rem;
+    }
+
+    .bguest__slideOne-body-animation-bowl-player{
+        margin-top: 6rem;
+        margin-left: -4rem;
+    }
+    
+    .bguest__slideOne-body-animation-bowl-player .bowl-player{
+        width: 120px;
+        height: 120px;
+    }
+
+    .bguest__slideOne-body-animation-video{
+        width: 350px;
+        height: 350px;
+        margin-top: 10rem;
+        margin-left: -12rem;
     }
 }

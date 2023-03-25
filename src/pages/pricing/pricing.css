@@ -72,6 +72,30 @@
     margin-bottom: 10rem;
 }
 
+.bguest__pricing-packages-customized-button-animation-tablet{
+    display: none;
+}
+
 .bguest__pricing-packages-customized-title h1{
     font-size: 3em;
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .bguest__pricing-packages .package{
+        margin: 5px;
+    }
+
+    .bguest__pricing-packages-customized-title h1{
+        font-size: 2.5em;
+    }
+
+    .bguest__pricing-packages-customized-button-animation{
+        display: none;
+    }
+
+    .bguest__pricing-packages-customized-button-animation-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
 }

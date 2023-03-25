@@ -41,6 +41,10 @@
     margin-top: 1.5rem;
 }
 
+.bguest__standardPricing-button-tablet{
+    display: none;
+}
+
 .bguest__standardPricing-features{
     margin-top: 1.5rem;
 }
@@ -53,9 +57,41 @@
     margin-top: 8px;
 }
 
-/* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)   {
     .bguest__standardPricing{
         width: 30vw;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px)   {
+    .bguest__standardPricing{
+        width: 30vw;
+    }
+
+    .bguest__standardPricing-button{
+        display: none;
+    }
+
+    .bguest__standardPricing-button-tablet{
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .bguest__standardPricing h2{
+        font-size: 20px;
+    }
+    
+    .bguest__standardPricing h3{
+        font-size: 14px;
+    }
+
+    .bguest__standardPricing-price p{
+        font-size: 34px;
+    }
+
+    .bguest__standardPricing-features h1{
+        font-size: 14px;
     }
 }

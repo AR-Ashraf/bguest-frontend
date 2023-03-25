@@ -18,9 +18,19 @@
     margin-left: 5px;
 }
 
-/* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
     .bguest__featureBulletLeft h1{
         font-size: 1.1rem;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px)   {
+    .bguest__featureBulletLeft-icon{
+        font-size: 0.9rem;
+    }
+    .bguest__featureBulletLeft h1{
+        font-size: 0.9rem;
     }
 }

@@ -67,3 +67,36 @@
   }
   
   
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+    .bguest__contact-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__contact-body-contents-form p{
+        font-size: 14px;
+    }
+
+    .bguest__contact-body-map{
+        width: 55%;
+        height: 60%;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px)   {
+    .bguest__contact-body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__contact-body-contents-form p{
+        font-size: 12px;
+    }
+
+    .bguest__contact-body-map{
+        width: 55%;
+        height: 60%;
+    }
+}

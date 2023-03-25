@@ -28,7 +28,7 @@ function SlideOne() {
             thirdLineText="To Retain Guests"
             highlightedWord="Restaurants"
           />
-          <Description text="Understand your Guests better and serve them better. Retain your happy Guests more." fontSize="22px"/>
+          <Description text="Understand your Guests better and serve them better. Retain your happy Guests more."/>
           <div className="bguest__slideOne-body-contents-process">
           <h1>How bGuest Works</h1>
           <div onClick={() => {dispatch(videoPreviewAction(true))}}>

@@ -71,6 +71,14 @@ function Pricing() {
         fontSize="28px" 
         onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}/>
         </div>
+        <div className="bguest__pricing-packages-customized-button-animation-tablet">
+        <AnimatedButton 
+        width="400px"
+        height="100px" 
+        text="Let's Talk" 
+        fontSize="24px" 
+        onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}/>
+        </div>
       </div>
 
       {/*----------- Footer Section -------------*/}

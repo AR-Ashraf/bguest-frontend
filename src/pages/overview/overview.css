@@ -328,8 +328,8 @@
 }
 
 
-/* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
     .bguest__overview-banner-animations .animation{
         margin: 2px;
     }
@@ -366,5 +366,70 @@
     .bguest__overview-email-contents-video .video{
         width: 100%;
         height: 300px;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px)   {
+    .bguest__overview-banner-animations .animation{
+        margin: 2px;
+    }
+
+    .bguest__overview-banner-animations .animation h1{
+        font-size: 16px;
+    }
+
+    .bguest__overview-analytics-contents{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bguest__overview-analytics-contents-video{
+        width: 60%;
+        height: 250px;
+        margin-right: 1rem;
+    }
+
+    .bguest__overview-analytics-contents-video .video{
+        width: 100%;
+        height: 250px;
+    }
+
+    .bguest__overview-email-contents{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bguest__overview-email-contents-video{
+        width: 60%;
+        height: 250px;
+        margin-left: 1rem;
+    }
+
+    .bguest__overview-email-contents-video .video{
+        width: 100%;
+        height: 250px;
+    }
+
+    .bguest__overview-analytics-title h1{
+        font-size: 2.5em;
+    }
+
+    .bguest__overview-email-title h1{
+        font-size: 2.5em;
+    }
+
+    .bguest__overview-sms-title h1{
+        font-size: 2.5em;
+    }
+
+    .bguest__overview-login-title h1{
+        font-size: 2.5em;
+    }
+
+    .bguest__overview-ai-title h1{
+        font-size: 2.5em;
     }
 }

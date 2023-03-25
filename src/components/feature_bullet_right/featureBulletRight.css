@@ -7,7 +7,6 @@
 
 .bguest__featureBulletRight-icon{
     font-size: 1.3rem;
-   
 }
 
 .bguest__featureBulletRight h1{
@@ -19,9 +18,20 @@
     margin-right: 5px;
 }
 
-/* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
     .bguest__featureBulletRight h1{
         font-size: 1.1rem;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px)   {
+    .bguest__featureBulletRight-icon{
+        font-size: 0.9rem;
+    }
+    
+    .bguest__featureBulletRight h1{
+        font-size: 0.9rem;
     }
 }

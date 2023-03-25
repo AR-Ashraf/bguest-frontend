@@ -84,13 +84,28 @@
     color: var(--color-brand-dark);
 }
 
-/* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
     .bguest__navbar {
         padding: 1rem;
     }
 
     .bguest__navbar-menu{
         max-width: 60vw;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .bguest__navbar {
+        padding: 1rem;
+    }
+
+    .bguest__navbar-menu{
+        max-width: 75vw;
+    }
+
+    .bguest__navbar-menu a{
+        font-size: 12px;
     }
 }

@@ -133,8 +133,56 @@
     margin-bottom: 10rem;
 }
 
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px)   {
+    .bguest__about-team img{
+        width: 70%;
+    }
+
+    .bguest__about-mission{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bguest__about-mission-contents{
+        width: 60%;
+    }
+
+    .bguest__about-vision{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .bguest__about-vision-contents{
+        width: 60%;
+    }
+
+    .bguest__about-vision-contents-title h1{
+        text-align: end;
+    }
+    
+    .bguest__about-vision-contents-description h1{
+        text-align: end;
+    }
+}
+
 /* Tablet Media */
-@media only screen and (max-width: 992px) and (min-width: 768px)  {
+@media only screen and (max-width: 768px) and (min-width: 600px)    {
+    .bguest__about-banner h1{
+        text-align: center;
+    }
+
+    .bguest__about-banner {
+        padding-top: 4rem;
+    }
+
+    .bguest__about-banner-title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
     .bguest__about-team img{
         width: 70%;
     }

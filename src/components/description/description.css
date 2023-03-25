@@ -6,3 +6,17 @@
     padding-top: 1rem;
     font-weight: lighter;
 }
+
+/* Small Laptop Media */
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .bguest__description h1{
+        font-size: 14px;
+    }
+}
+
+/* Tablet Media */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .bguest__description h1{
+        font-size: 13px;
+    }
+}

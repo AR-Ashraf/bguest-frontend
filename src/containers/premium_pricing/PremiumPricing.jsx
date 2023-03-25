@@ -25,6 +25,16 @@ function PremiumPricing({price})  {
       onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}
       />
       </div>
+      <div className='bguest__premiumPricing-button-tablet'>
+      <Button
+      width="100%"
+      height="50px"
+      borderRadius="25px"
+      text="Schedule Meeting"
+      fontSize="16px"
+      onClick={() => OpenLinkNewTab("https://calendly.com/bguest-ai/meeting")}
+      />
+      </div>
       <div className='bguest__premiumPricing-features'>
       <div className='feature'><PricePoint color="#006400" text="2 Free Routers"/></div>
       <div className='feature'><PricePoint color="#006400" text="Auto WiFi Login Firmware"/></div>

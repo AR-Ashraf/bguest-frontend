@@ -21,7 +21,7 @@ function SlideFour() {
             thirdLineText="Time & Cost"
             highlightedWord="Save"
           />
-          <Description text="We envision to automate the Restaurant industry. And you will be vital part of this pioneering." fontSize="22px" />
+          <Description text="We envision to automate the Restaurant industry. And you will be vital part of this pioneering."/>
           <div className="bguest__slideFour-body-contents-thumb-animations">
           <ThumbAnimation player={manualWork} text='Still Work Manually?'/>
           <ThumbAnimation player={autoTasking} text='We Will Automate Everything For You'/>

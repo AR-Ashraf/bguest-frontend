@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { ABOUT, OVERVIEW, PRICING, CONTACT } from "../../helpers/Constants";
+import { ABOUT, OVERVIEW, PRICING, CONTACT, DASHBOARD, LOGIN } from "../../helpers/Constants";
 import { waitForm, OpenLinkNewTab } from "../../helpers/Functions";
 import { menuAction } from "../../redux/actions";
 import { RiCloseLine } from "react-icons/ri";
@@ -13,6 +13,7 @@ import "./menu.css";
 function Menu() {
   const dispatch = useDispatch();
   const isMenu = useSelector((state) => state.isMenu);
+  const isToken = useSelector((state) => state.isToken);
   const [animate, setAnimate] = useState(false);
 
   async function slideOutAnimation() {
@@ -71,6 +72,25 @@ function Menu() {
           >
             Contact Us
           </NavLink>
+          {isToken || localStorage.getItem("saveToken") ? (
+          <NavLink
+            to={DASHBOARD}
+            preventScrollReset={true}
+            className={({isActive}) => (isActive ? 'active' : null)}
+            onClick={() => slideOutAnimation()}
+          >
+            Dashboard
+          </NavLink>
+        ) : (
+          <NavLink
+            to={LOGIN}
+            preventScrollReset={true}
+            className={({isActive}) => (isActive ? 'active' : null)}
+            onClick={() => slideOutAnimation()}
+          >
+            Log In
+          </NavLink>
+        )}
         </div>
         <div className="bguest__menu-body-animation">
           <img src={AnimationImage} alt="bGuest Menu Animation" />
