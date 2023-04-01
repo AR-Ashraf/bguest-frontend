@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:755c33ba3a0b185010dc452ed23ed29ec8168251d6028e9f8c8106b94830a767
-size 351
+{
+  "short_name": "bGuest - Retain Guests with AI",
+  "name": "bGuest - Retain Guests with AI",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

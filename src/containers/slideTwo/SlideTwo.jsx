@@ -29,7 +29,7 @@ function SlideTwo() {
         <img src={retain2} alt='Guest Retention' />
         <img src={retain1} alt='Guest Retention' />
         </div>
-        <div className="c">
+        <div className="bguest__slideTwo-body-contents-mobile">
           <Tagline text="YOUR BENEFITS" />
           <Title
             firstLineText="Retain More"

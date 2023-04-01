@@ -1,9 +1,9 @@
 {
-  "short_name": "bGuest - Repeated Guests, Happy Business",
-  "name": "bGuest - Repeated Guests, Happy Business",
+  "short_name": "bGuest - Retain Guests with AI",
+  "name": "bGuest - Retain Guests with AI",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/svg"
     }
