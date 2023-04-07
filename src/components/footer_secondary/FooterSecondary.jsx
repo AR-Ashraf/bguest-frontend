@@ -20,9 +20,9 @@ function FooterSecondary(props) {
         </div>
         <div className="bguest__footerSecondary-permalinks-extras">
           <h1>© bGuest 2023 All Rights Reserved</h1>
-          <p onClick={() => {OpenLink("https://bguest.ai/insight/privacy-policy/")}}>Privacy Policy</p>
-          <p onClick={() => {OpenLink("https://bguest.ai/insight/terms-conditions/")}}>Terms & Conditions</p>
-          <p onClick={() => {OpenLink("https://bguest.ai/insight/cookie-policy/")}}>Cookie Policy</p>
+          <p onClick={() => {OpenLink("https://insight.bguest.ai/privacy-policy/")}}>Privacy Policy</p>
+          <p onClick={() => {OpenLink("https://insight.bguest.ai/terms-conditions/")}}>Terms & Conditions</p>
+          <p onClick={() => {OpenLink("https://insight.bguest.ai/cookie-policy/")}}>Cookie Policy</p>
         </div>
       </div>
     </div>
