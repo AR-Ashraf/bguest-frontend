@@ -1,33 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.28a93238.css",
-    "main.js": "/static/js/main.abe7cf74.js",
+    "main.css": "/static/css/main.337a7562.css",
+    "main.js": "/static/js/main.d5170690.js",
     "static/media/restaurant.mp4": "/static/media/restaurant.db97abb774bcea87ef87.mp4",
     "static/media/restaurant.ogg": "/static/media/restaurant.432ae260721ff49ae5b0.ogg",
     "static/media/team.png": "/static/media/team.b82d22c38fdbae4fa16b.png",
     "static/media/Opensans.ttf": "/static/media/Opensans.ceb05254cedfa895b512.ttf",
     "static/media/popular_tag.png": "/static/media/popular_tag.8c268878cc3338cef659.png",
+    "static/media/dashboard.png": "/static/media/dashboard.1af2f620d28d7c9be4ef.png",
     "static/media/Poppins.ttf": "/static/media/Poppins.8081832fc5cfbf634aa6.ttf",
     "static/media/NT Josefine.otf": "/static/media/NT Josefine.923ab571039dbb9047e4.otf",
-    "static/media/dashboard.png": "/static/media/dashboard.9cb800978e538e58f4b6.png",
-    "static/media/retain2.svg": "/static/media/retain2.4ed58234cbe5f296586a1d1145603194.svg",
-    "static/media/forest_lounge.svg": "/static/media/forest_lounge.7b9aaa5a09d14b33907550dc152f8281.svg",
-    "static/media/retain1.svg": "/static/media/retain1.58108303645936d47c4de9b4233e656d.svg",
+    "static/media/retain1.svg": "/static/media/retain1.4ed58234cbe5f296586a1d1145603194.svg",
+    "static/media/retain2.svg": "/static/media/retain2.58108303645936d47c4de9b4233e656d.svg",
     "static/media/menu_animation.svg": "/static/media/menu_animation.a1baa807c9f6f84ed7b70ee35dac8c15.svg",
     "static/media/guest_talk1.svg": "/static/media/guest_talk1.d32370fe31c52b0fe303df95ee86e8fd.svg",
     "static/media/guest_man.svg": "/static/media/guest_man.d3fcd0e3f2eba80d9095c67000d35013.svg",
     "static/media/guest_lady.svg": "/static/media/guest_lady.92be1a27c8a78f0b49dcf2e1db54febf.svg",
     "static/media/guest_talk2.svg": "/static/media/guest_talk2.46825bab21b10dd38e338470b3ea2d6e.svg",
+    "static/media/forest_lounge.svg": "/static/media/forest_lounge.70fc9ec2f6e34d7dc3183c1399913622.svg",
     "static/media/mission.svg": "/static/media/mission.aa44af145ae124b16a01d331f2951340.svg",
     "static/media/vision.svg": "/static/media/vision.cf270ef26497322b729a81096f178cb0.svg",
     "index.html": "/index.html",
-    "static/media/dc.svg": "/static/media/dc.bd962782013a0848942072409d31bd92.svg",
     "static/media/logo_white.svg": "/static/media/logo_white.220bb12f4d11aeec7b89d07f581ad5c6.svg",
-    "main.28a93238.css.map": "/static/css/main.28a93238.css.map",
-    "main.abe7cf74.js.map": "/static/js/main.abe7cf74.js.map"
+    "main.337a7562.css.map": "/static/css/main.337a7562.css.map",
+    "main.d5170690.js.map": "/static/js/main.d5170690.js.map"
   },
   "entrypoints": [
-    "static/css/main.28a93238.css",
-    "static/js/main.abe7cf74.js"
+    "static/css/main.337a7562.css",
+    "static/js/main.d5170690.js"
   ]
 }

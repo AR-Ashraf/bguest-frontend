@@ -1,6 +1,5 @@
 import React from "react";
 import forest_lounge from "../../assets/images/forest_lounge.svg";
-import devs_core from "../../assets/images/dc.svg";
 import "./footer.css";
 
 function Footer(props) {
@@ -14,7 +13,6 @@ function Footer(props) {
       <div className="bguest__footer-partners">
         <h1>OUR PARTNERS</h1>
         <div className="bguest__footer-partners-icons">
-          <img src={devs_core} alt="Devs Core" />
           <img src={forest_lounge} alt="forest lounge" /> 
         </div>
       </div>

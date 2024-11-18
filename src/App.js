@@ -9,9 +9,13 @@ import ScrollToTop from "./helpers/ScrollToTop";
 
 function App() {
   const { pathname } = useLocation();
+  console.log('pathname:', pathname);
 
   const isMenu = useSelector((state) => state.isMenu);
   const isVideo = useSelector((state) => state.isVideo);
+  console.log('isMenu:', isMenu);
+  console.log('isVideo:', isVideo);
+
   return (
     <div className="App">
       <div className="bguest__bg">

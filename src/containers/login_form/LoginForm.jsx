@@ -54,6 +54,16 @@ function LoginForm() {
     if (!formData.username || !formData.password) {
       setErrorMessage("Both username and password are required");
     } else {
+
+      // Hardcoded credentials check
+    if (formData.username === "admin" && formData.password === "admin") {
+      setErrorMessage("");
+      const hardcodedToken = "hardcodedAdminToken";
+      localStorage.setItem("saveToken", hardcodedToken);
+      dispatch(tokenAction(hardcodedToken));
+      navigate("/dashboard");
+      return;
+    }
       
       // send login data to server
 
